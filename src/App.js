@@ -40,6 +40,10 @@ export default function App() {
     }
   };
 
+  const shuffleCurrentQuestionVariants = () => {
+
+  };
+
   const startOver = () => {
     setCurrentQuestion(0);
     setFinish(false);
@@ -74,7 +78,7 @@ export default function App() {
           <span className="m-2 border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
             {`${currentQuestion}/${data.length - 1}`}
           </span>
-          {data[currentQuestion].variants.map((variant) => (
+          {data[currentQuestion].variants.sort(function(a, b){return 0.5 - Math.random()}).map((variant, index) => (
             <div className="m-2 h-14 border-2 border-black mx-auto text-center">
               <p
                 key={variant.id}
@@ -87,7 +91,7 @@ export default function App() {
                 }`}
                 onClick={() => checkAnswer(variant)}
               >
-                {variant}
+                { String.fromCharCode(65 + index)} - {variant}
               </p>
             </div>
           ))}
@@ -111,6 +115,7 @@ export default function App() {
               className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => {
                 setCurrentQuestion(currentQuestion + 1);
+                shuffleCurrentQuestionVariants();
                 checkCorrectAnswer();
                 reset();
               }}

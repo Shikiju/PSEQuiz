@@ -209,6 +209,71 @@ export const allData = [
     `Nee, verdachte is nu strafbaar voor het niet opgeven van zijn identiteitsgegevens`, `Nee, de verdachte is nu strafbaar voor het niet tonen van een identiteitsbewijs`]
   },
   {
+    id: 21,
+    question: "Tijdens een voetsurveillance ontdekt een agent een woninginbraak op heterdaad. De<br>\
+    dader heeft de toegangsdeur van de woning geforceerd. De dader gaat op de vlucht<br>\
+    zonder iets mee te nemen.<br>\
+    <br>\
+    Welk strafbaar feit is hier gepleegd?",
+    answer: "Poging tot overtreding van artikel 311 Sr (poging tot gekwalificeerde diefstal)",
+    variants: [`Overtreding 311 SR (gekwalificeerde diefstal)`, `Poging tot overtreding van artikel 311 Sr (poging tot gekwalificeerde diefstal)`, 
+    `Er is geen strafbaar feit gepleegd omdat de dader niets heeft weggenomen`, `Poging tot overtreding van artikel 310 Sr (poging tot diefstal)`]
+  },
+  {
+    id: 22,
+    question: "In uw vrije tijd houdt u een winkeldief aan. U zegt er niet bij dat u politieambtenaar bent.<br>\
+    De verdachte probeert zich los te rukken.<br>\
+    <br>\
+    Is hier sprake van wederspannigheid?",
+    answer: "Nee, de verdachte moet weten dat ik politieambtenaar ben",
+    variants: [`Nee, losrukken is geen geweld`, `Ja, de aanhouding is rechtmatig en Iosrukken is geweld`, `Ja, ik ben in de rechtmatige uitoefening van mijn bediening en hĳ verzet zich met
+    geweld`, `Nee, de verdachte moet weten dat ik politieambtenaar ben`]
+  },
+  {
+    id: 23,
+    question: "Een aangehouden verdachte, verdacht van een VH misdrijf, wordt gevraagd naar zijn<br>\
+    naam. Hij geeft die op en ten bewijze daarvan overhandigt hij een paspoort. Na<br>\
+    onderzoek blijkt dat een echt document te zijn.<br>\
+    <br>\
+    Is de politie bevoegd ook nog foto’s en vingerafdrukken van de man te nemen ter<br>\
+    vaststelling van zijn identiteit?",
+    answer: "Ja, omdat het een VH—misdrijf betreft",
+    variants: [`Nee, dat is het werk van specialisten`, `Ja, omdat het een VH—misdrijf betreft`, 
+    `Nee, niet als hij een eigen, echt en geldig Nederlands paspoort heeft`, `Ja, dit mag alleen bij overtredingen`]
+  },
+  {
+    id: 24,
+    question: "Een parkeerwachter wil op een aantal verkeerd geparkeerde auto's een kennisgeving van<br>\
+    bekeuring aanbrengen. Als hij zijn bekeuringsboekje wil pakken, komt er een man naar hem<br>\
+    toe en zegt: 'Als jij hier bekeuringen gaat uitschrijven, stomp ik jou in elkaar'<br>\
+    <br>\
+    Maakt de man zich schuldig aan een strafbaar feit?",
+    answer: "Ja, dit is een poging tot mishandeling van een ambtenaar en dat is altijd strafbaar",
+    variants: [`Ja, de man dreigt met geweld om een bekeuring te voorkomen`, `Ja, dit is een poging tot mishandeling van een ambtenaar en dat is altijd strafbaar`,
+    `Nee, de parkeerwachter was nog niet begonnen met het uitschrijven van een
+    bekeuring`, `Nee, pas als de man daadwerkelijk had gestompt, was hij strafbaar`]
+  },
+  {
+    id: 25,
+    question: "Een journalist komt een witwaszaak op het spoor en publiceert hierover in een<br>\
+    landelijk dagblad. Is dit toegestaan?",
+    answer: "Ja, want dit is grondrechtelijk verankerd als persvrijheid",
+    variants: [`Ja, als hij de OvJ eerst op de hoogte heeft gesteld van dit strafbaar feit`, `Ja, als hij toestemming heeft van een OvJ of een RC`, 
+    `Ja, want dit is grondrechtelijk verankerd als persvrijheid`, `Ja, als hij de politie eerst op de hoogte heeft gesteld van dit strafbaar feit`]
+  },
+  {
+    id: 12,
+    question: "",
+    answer: "A",
+    variants: [`A`, `B`, `C`, `D`]
+  },
+  {
+    id: 12,
+    question: "",
+    answer: "A",
+    variants: [`A`, `B`, `C`, `D`]
+  },
+  {
     id: 12,
     question: "",
     answer: "A",
