@@ -1,5 +1,5 @@
 import "./styles.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { allData } from "./data";
 
 export default function App() {
@@ -10,10 +10,19 @@ export default function App() {
   const [show, setShow] = useState(false);
   const [clickAnswer, setClickAnswer] = useState(false);
 
-  const tmp = allData.sort(function(a, b){
-    return b.id - a.id;
-  });
-  const [data, setData] = useState(tmp);
+  const [data, setData] = useState([{id: -1, question: 'loading', variants: ['loading', 'loading']}]);
+
+  useEffect(() => {
+    console.log(`I will rule the world!`);
+    loadData();
+  }, []);
+
+  const loadData = () => {
+    const loadedData = allData.sort(function(a, b){
+      return b.id - a.id;
+    });
+    setData(loadedData);
+  };
 
   const checkAnswer = (variant) => {
     setMyAnswer(variant);
@@ -79,7 +88,7 @@ export default function App() {
             {`${currentQuestion}/${data.length - 1}`}
           </span>
           {data[currentQuestion].variants.sort(function(a, b){return 0.5 - Math.random()}).map((variant, index) => (
-            <div className="m-2 h-14 border-2 border-black mx-auto text-center">
+            <div className="m-2 h-14 border-2 border-black mx-auto text-center" key={index}>
               <p
                 key={variant.id}
                 className={`variant ${
@@ -134,15 +143,20 @@ export default function App() {
           )}
 
           <footer className="m-4 text-center">
-            Data source from{" "}
             <a
               className="text-pink-400"
               href="https://nl.wikipedia.org/wiki/Anonymous_%28collectief%29"
               target="_blank"
               rel="noreferrer"
             >
-              Solution Answer Database
-            </a>{" "}
+              Made by
+            </a>{" "}<br></br>
+            Icon From <a
+              className="text-pink-400"
+              href="https://www.flaticon.com/"
+              target="_blank"
+              rel="noreferrer"
+            >flaticon</a>
           </footer>
         </div>
       </div>
