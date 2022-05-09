@@ -13,7 +13,7 @@ export default function App() {
   const [data, setData] = useState([{id: -1, question: 'loading', variants: ['loading', 'loading']}]);
 
   useEffect(() => {
-    console.log(`I will rule the world!`);
+    console.log(`Initial load`);
     loadData();
   }, []);
 
