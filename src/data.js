@@ -492,6 +492,85 @@ export const allData = [
     variants: [`Meineed`, `Oplichting`, `Belemmeren van de rechtsgang`, `Ambtsdwang`]
   },
   {
+    id: 50,
+    question: "Een man heeft laptops gestolen en bewaart ze in een loods. Politie valt binnen houdt de<br>\
+    man aan. Wie is bij afwezigheid van de OvJ bevoegd de loods te doorzoeken ter<br>\
+    inbeslagname?",
+    answer: "De Hovj met een machtiging van de OvJ",
+    variants: [`Hovj met een machtiging van de RC`, `De opsporingsambtenaar met machtiging OvJ`, `De opsporingsambtenaar, het is namelijk een zelfstandige bevoegdheid van de
+    opsporingsambtenaar`, `De Hovj met een machtiging van de OvJ`]
+  },
+  {
+    id: 51,
+    question: "In de Grondwet staat het huisrecht beschreven.<br>\
+    Wanneer mag hiervan worden afgeweken?",
+    answer: "In gevallen bij of krachtens de wet bepaald",
+    variants: [`Dit mag niet omdat het een grondrecht is`, `Als hierover in de APV (algemene plaatselijke verordeningen) bepalingen zijn opgenomen`, 
+    `In gevallen bij of krachtens de wet bepaald`, `Als hierover in een AMVB (algemene maatregel van bestuur) bepalingen zijn opgenomen`]
+  },
+  {
+    id: 52,
+    question: "Een politieagent ziet om 03.00 uur 's nachts een man in het centrum lopen die een gevulde<br>\
+    plastic draagtas tegen zich aangedrukt houdt. De agent vraagt de man wat er in de tas zit.<br>\
+    Had u de man moeten meedelen dat hij niet tot antwoorden verplichten was?",
+    answer: "Nee, want de man is geen verdachte",
+    variants: [`Nee, want de man is geen verdachte`, `Ja, want ik stel hem een vraag over een mogelijk gepleegd strafbaar feit`, `Nee, want ik heb de man niet staande gehouden`, 
+    `Ja, want de vraag valt onder het begrip 'verhoor'`]
+  },
+  {
+    id: 53,
+    question: "Wie kan verzoeken dat de verdachte meer dan één advocaat krijgt toegewezen?",
+    answer: "De verdachte, in bijzondere gevallen",
+    variants: [`De officier van justitie, in bijzondere gevallen`, `De verdachte, in bijzondere gevallen`, `De politie, in bijzondere gevallen`, 
+    `De advocaat, in bijzondere gevallen`]
+  },
+  {
+    id: 54,
+    question: "Wat bevat het barp",
+    answer: "De rechten en plichten van de politieambtenaar",
+    variants: [`De regeling geeft aan hoe de ambtenaar zich zou kunnen opstellen in de organisatie`, `De regels voor het uitoefenen van politiebevoegdheden`, 
+    `Een advies over het gedrag van de politieambtenaar`, `De rechten en plichten van de politieambtenaar`]
+  },
+  {
+    id: 55,
+    question: "De rijksrecherche heeft tot taak het doen van onderzoek in opdracht van het College van<br>\
+    procureurs-generaal, naar feiten of gedragingen die mogelijk een strafbaar feit opleveren.<br>\
+    <br>\
+    In welk voorbeeld leidt de rijksrecherche het onderzoek?",
+    answer: "Bij vuurwapengebruik door de politie waarbij een burger is gedood",
+    variants: [`Bij een klachtenafhandeling van burgers over een bekeuring`, `Bij vuurwapengebruik door de politie waarbij een burger is gedood`, 
+    `Bij landelijke vermissingen van kinderen waarbij een AMBER-alert wordt ingezet`, `Bij grote landelijke drugsmisdrijven door bekende criminelen`]
+  },
+  {
+    id: 56,
+    question: "De politietaak moet worden uitgeoefend in overeenstemming met de geldende rechtsregels.<br>\
+    Dat betekent in overeenstemming met",
+    answer: "De regels van het geschreven en het ongeschreven recht",
+    variants: [`De regels van het geschreven en het ongeschreven recht`, `De Politiewet, het WvSr en het WvSv`, `De regels zoals door de regering zijn vastgesteld`, 
+    `De grondwet en het WvSv`]
+  },
+  {
+    id: 57,
+    question: "De politiegegevens, noodzakelijk voor de dagelijkse uitoefening van de politietaak, worden<br>\
+    vernietigd uiterlijk",
+    answer: "5 jaar na de eerste verwerking",
+    variants: [`1 jaar na de eerste verwerking`, `2 jaar na de eerste verwerking`, `5 jaar na de eerste verwerking`, `6 jaar na de eerste verwerking`]
+  },
+  {
+    id: 58,
+    question: "Wie heeft het opperbevel in het geval van een ramp of van een ernstige vrees voor het<br>\
+    ontstaan daarvan?",
+    answer: "De burgemeester",
+    variants: [`De burgemeester`, `De politiechef`, `De brandweercommandant`, `De directeur GGD`]
+  },
+  {
+    id: 59,
+    question: "De politierechter is bevoegd tot het behandelen van:",
+    answer: "Strafzaken in 1e aanleg, niet zijnde kantonzaken",
+    variants: [`Misdrijven en overtredingen in 1e aanleg, niet zijnde kantonzaken`, `Strafzaken in 1e aanleg, niet zijnde kantonzaken`, 
+    `Overtredingen`, `Gedragingen uit de wet Mulder`]
+  },
+  {
     id: 12,
     question: "",
     answer: "A",

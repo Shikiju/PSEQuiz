@@ -3,20 +3,27 @@ import React, { useState, useEffect } from "react";
 import { allData } from "./data";
 
 export default function App() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [myAnswer, setMyAnswer] = useState("");
   const [score, setScore] = useState(0);
   const [finish, setFinish] = useState(false);
   const [show, setShow] = useState(false);
   const [clickAnswer, setClickAnswer] = useState(false);
-
   const [data, setData] = useState([{id: -1, question: 'loading', variants: ['loading', 'loading']}]);
-
+  const [correctPassword, setCorrectPassword] = useState(false);
+  
   useEffect(() => {
     console.log(`Initial load`);
+    checkPassword(localStorage.getItem("message"));
     loadData();
   }, []);
 
+  const checkPassword = (password) => {
+    if(password === null) { // TODO set password here
+      setCorrectPassword(true);
+    }
+  };
+  
   const loadData = () => {
     const loadedData = allData.sort(function(a, b){
       return b.id - a.id;
@@ -30,7 +37,7 @@ export default function App() {
   };
 
   const checkCorrectAnswer = () => {
-    if (myAnswer === data[currentQuestion].answer) {
+    if (myAnswer === data[currentQuestionIndex].answer) {
       setScore(score + 1);
     }
   };
@@ -44,7 +51,7 @@ export default function App() {
   };
 
   const finishHandler = () => {
-    if (currentQuestion === data.length - 1) {
+    if (currentQuestionIndex === data.length - 1) {
       setFinish(true);
     }
   };
@@ -54,13 +61,15 @@ export default function App() {
   };
 
   const startOver = () => {
-    setCurrentQuestion(0);
+    setCurrentQuestionIndex(0);
     setFinish(false);
     setMyAnswer("");
     setScore(0);
   };
 
-  if (finish) {
+  if (!correctPassword) {
+    return <input></input>
+  } else if (finish) {
     return (
       <div className="container m-4 p-4 mx-auto h-min-screen grid grid-rows-1 grid-cols-1 items-center">
         <div className="wrapper">
@@ -82,18 +91,18 @@ export default function App() {
     return (
       <div className="container m-4 p-4 mx-auto h-min-screen grid grid-rows-1 grid-cols-1 items-center">
         <div className="wrapper">
-          <h2 className="m-4 p-2 h-30 text-center text-2xl font-bold" dangerouslySetInnerHTML={{__html: data[currentQuestion].question}}>
+          <h2 className="m-4 p-2 h-30 text-center text-2xl font-bold" dangerouslySetInnerHTML={{__html: data[currentQuestionIndex].question}}>
           </h2>
           <span className="m-2 border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
-            {`${currentQuestion}/${data.length - 1}`}
+            {`${currentQuestionIndex}/${data.length - 1}`}
           </span>
-          {data[currentQuestion].variants.sort(function(a, b){return 0.5 - Math.random()}).map((variant, index) => (
+          {data[currentQuestionIndex].variants.sort(function(a, b){return 0.5 - Math.random()}).map((variant, index) => (
             <div className="m-2 h-14 border-2 border-black mx-auto text-center" key={index}>
               <p
                 key={variant.id}
                 className={`variant ${
                   myAnswer === variant
-                    ? myAnswer === data[currentQuestion].answer
+                    ? myAnswer === data[currentQuestionIndex].answer
                       ? "correctAnswer"
                       : "incorrectAnswer"
                     : null
@@ -115,15 +124,15 @@ export default function App() {
           )}
           {show && (
             <p className="m-2 h-14 mx-auto text-center">
-              Correct Answer: {data[currentQuestion].answer}
+              Correct Answer: {data[currentQuestionIndex].answer}
             </p>
           )}
 
-          {currentQuestion < data.length - 1 && (
+          {currentQuestionIndex < data.length - 1 && (
             <button
               className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => {
-                setCurrentQuestion(currentQuestion + 1);
+                setCurrentQuestionIndex(currentQuestionIndex + 1);
                 shuffleCurrentQuestionVariants();
                 checkCorrectAnswer();
                 reset();
@@ -133,7 +142,7 @@ export default function App() {
             </button>
           )}
 
-          {currentQuestion === data.length - 1 && (
+          {currentQuestionIndex === data.length - 1 && (
             <button
               className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => finishHandler()}
