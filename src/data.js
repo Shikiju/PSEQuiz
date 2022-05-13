@@ -571,15 +571,177 @@ export const allData = [
     `Overtredingen`, `Gedragingen uit de wet Mulder`]
   },
   {
-    id: 12,
-    question: "",
-    answer: "A",
-    variants: [`A`, `B`, `C`, `D`]
+    id: 60,
+    question: "Er wordt een klacht ingediend tegen een medewerker van de ondersteunende dienst van de politie.<br>\
+    <br>\
+    Wie draagt zorg voor de afhandeling van de klacht?",
+    answer: "De korpschef",
+    variants: [`De korpschef`, `De afdeling VIK`, `De politiechef van de eenheid`, `De minister van J&V`]
   },
   {
-    id: 12,
-    question: "",
-    answer: "A",
-    variants: [`A`, `B`, `C`, `D`]
+    id: 61,
+    question: "Tijdens het fietsen verliest een kind zijn evenwicht. Hij valt tegen de auto van de buurman.<br>\
+    De auto raakt hierbij beschadigd. De buurman ziet het gebeuren.<br>\
+    <br>\
+    Kan de buurman nu aangifte doen van een strafbaar feit?",
+    answer: "Nee, er is geen sprake van een strafbaar feit",
+    variants: [`Ja, van baldadigheid omdat de opzet niet gericht was op de vernieling`, `Ja, van vernieling want zijn auto is beschadigd`, 
+    `Nee, er is geen sprake van een strafbaar feit`, `Ja, want er is sprake van een onrechtmatige daad`]
   },
+  {
+    id: 62,
+    question: "Een politieagent krijgt een melding dat een alleenwonende man onwel is geworden in zijn woning.<br>\
+    <br>\
+    Is de agent bevoegd de woning te betreden om hem hulp te verlenen?",
+    answer: "Ja, hij is bevoegd om ter hulpverlening elke plaats te betreden en heeft vanwege het onmiddellijk dreigend gevaar geen machtiging nodig",
+    variants: [`Ja, hij is bevoegd om ter hulpverlening elke plaats te betreden en heeft vanwege het onmiddellijk dreigend gevaar geen machtiging nodig`, 
+    `Ja, hij is bevoegd om ter hulpverlening elke plaats te betreden en daarbij is nooit een machtiging vereist`, 
+    `Nee, want hij heeft geen toestemming van de bewoner`, `Nee, want hij heeft geen machtiging tot binnentreden`]
+  },
+  {
+    id: 63,
+    question: "Er wordt een moord gepleegd in een gemeente. De politie doet een onderzoek.<br>\
+    <br>\
+    Wie is hier belast met de strafrechtelĳke handhaving van de rechtsorde?",
+    answer: "Het openbaar-ministerie",
+    variants: [`De minister van Veiligheid en Justitie`, `De rechter-commissaris`, `De burgemeester`, `Het openbaar-ministerie`]
+  },
+  {
+    id: 64,
+    question: "De politie voert haar taak uit in ondergeschiktheid aan het bevoegde gezag. Wie is het<br>\
+    bevoegde gezag als de politie het verkeer regelt bij een uitslaande brand?",
+    answer: "De burgemeester",
+    variants: [`Het college van burgemeester en wethouders`, `De officier van justitie`, `De burgemeester`, `De kantonrechter`]
+  },
+  {
+    id: 65,
+    question: "Iemand vindt op straat een horloge. Hij meldt dit bij de gemeente.<br>\
+    Hij wordt eigenaar na:",
+    answer: "1 jaar",
+    variants: [`6 maanden`, `1 jaar`, `3 maanden`, `20 jaar`]
+  },
+  {
+    id: 66,
+    question: "Een man is bekeurd door een politieagent voor het te snel rijden. Uit wraak<br>\
+    vertelt de man overal waar hij komt, dat die politieman dat gedaan heeft om zijn<br>\
+    eigen portemonnee te vullen.<br>\
+    <br>\
+    Pleegt de man een strafbaar feit?",
+    answer: "Ja aan smaad",
+    variants: [`Ja aan smaad`, `Nee, de man heeft het recht op vrije meningsuiting`, 
+    `Ja, eenvoudige belediging`, `Nee, want iedereen kan weten dat een politieman zulke dingen niet doet`]
+  },
+  {
+    id: 67,
+    question: "Een politieman vordert van een Portugese automobilist een rijbewijs. De agent krijgt een<br>\
+    geldig Portugees rijbewijs en de bestuurder geeft aan al langere tijd in Nederland<br>\
+    ingeschreven te staan bij de Basisregistratie Personen. De agent neemt geen genoegen met<br>\
+    het rijbewijs en vordert een geldig paspoort.<br>\
+    <br>\
+    Handelt de agent juist op grond van de Wet op de identificatieplicht?",
+    answer: "Nee, dit rijbewijs volstaat",
+    variants: [`Nee, alleen Nederlandse rijbewijzen zijn geldige identiteitsbewijzen`, `Ja, de bestuurder moet een paspoort kunnen tonen, ongeacht of dat geldig is of niet`, 
+    `Nee, dit rijbewijs volstaat`, `Ja, de bestuurder moet in het bezit zijn van een geldig paspoort`]
+  },
+  {
+    id: 68,
+    question: "Een getuige moet dringend worden gehoord in een onderzoek naar<br>\
+    een zeer ernstig levensdelict.<br>\
+    De getuige verblijft voor langere tijd op Bonaire.<br>\
+    <br>\
+    Kan deze getuige via een videoconferentie worden gehoord",
+    answer: "Ja, dat is hetzelfde als een verhoor in persoon",
+    variants: [`Nee, niet voor delicten waarvoor voorlopige hechtenis is toegelaten`, `Ja, dat is hetzelfde als een verhoor in persoon`, 
+    `Ja, als de getuige daar geen bezwaar tegen heeft`, `Nee, formele verhoren moeten in persoon worden gedaan`]
+  },
+  {
+    id: 69,
+    question: "Een werknemer maakt aan het eind van de maand een reiskostendeclaratie op. Hij<br>\
+    declareert 300 km meer dan hij werkelijk heeft gereden en dient de declaratie in bijzijn werkgever.<br>\
+    Heeft hij valsheid in geschrifte gepleegd?",
+    answer: "Ja, want hij heeft de declaratie valselijk opgemaakt met de bedoeling deze als echt te gebruiken",
+    variants: [`Ja, want hij heeft de declaratie valselijk opgemaakt met de bedoeling deze als echt te gebruiken`, 
+    `Nog niet, er is pas sprake van valsheid in geschrifte als het gedeclareerde bedrag wordt uitgekeerd`, 
+    `Ja, want hij heeft listige kunstgrepen toegepast in een geschrift met het oogmerk de valsheid te verhullen`, 
+    `Nee, want het vermelden van een onjuist aantal gereden kilometers is geen vervalsen`]
+  },
+  {
+    id: 70,
+    question: "De dagelijkse leiding van een regionale eenheid berust bij.....",
+    answer: "De politiechef",
+    variants: [`De politiechef`, `De burgemeester`, `De officier van justitie`, `De minister van veiligheid en justitie`]
+  },
+  {
+    id: 71,
+    question: "Politieagent heeft een nieuwe woning op het oog. Hij kijkt in BVH of zijn<br>\
+    mogelijke nieuwe buren antecedenten hebben.<br>\
+    <br>\
+    Is dit toegestaan?",
+    answer: "Nee dit gedrag is niet integer",
+    variants: [`Nee dit is gedrag is een ambtsmisdrijf`, `Nee dit gedrag is niet integer`, `Ja, informatie in BVH mag vrij gebruikt worden`, 
+    `Ja, als hij de informatie voor zich houdt`]
+  },
+  {
+    id: 72,
+    question: "Een autoverkoper sluit het portier van een auto, waardoor de vingers<br>\
+    van een klant per ongeluk bekneld raken. De klant heeft daardoor<br>\
+    twee gebroken vingers.<br>\
+    <br>\
+    Is hier sprake van mishandeling?",
+    answer: "Nee, de verkoper had niet het opzet om de klant pijn te doen",
+    variants: [`Nee, de verkoper had niet het opzet om de klant pijn te doen`, `Ja, er is sprake van eenvoudige mishandeling`, 
+    `Nee, het letsel is te wijten aan de klant zelf`, `Ja, er is sprake van eenvoudige mishandeling met lichamelijk letsel`]
+  },
+  {
+    id: 73,
+    question: "Wie benoemt de burgemeester",
+    answer: "De koning",
+    variants: [`De burgers van een stad`, `De gemeenteraad`, `College van B&W`, `De koning`]
+  },
+  {
+    id: 74,
+    question: "Twee politieagenten krĳgen een melding over een ernstig verwarde man die weggelopen is uit<br>\
+    een psychiatrisch ziekenhuis. Hij houdt zich op in een winkelcentrum en schreeuwt daar hard<br>\
+    dat hij bedreigd wordt door de CIA en dat hij zich tot het einde zal verdedigen. De agenten<br>\
+    brengen hem over naar het dichtstbijzijnde politiebureau.<br>\
+    <br>\
+    Is het de politieambtenaren toegestaan een vervoersfouillering te passen op deze man?",
+    answer: "Ja, deze bevoegdheid mag de politie toepassen op alle personen die overgebracht worden naar het politiebureau",
+    variants: [`Nee, de man is niet als verdachte aangehouden en er bestaan geen ernstige bezwaren tegen hem`, 
+    `Nee, de man wordt niet verdacht van een strafbaar feit, hij heeft alleen staan te roepen`,
+    `Ja, deze bevoegdheid mag de politie toepassen op alle personen die overgebracht worden naar het politiebureau`, 
+    `Ja, er is sprake van onmiddellijk dreigend gevaar voor hun leven of veiligheid en het is nodig`]
+  },
+  {
+    id: 75,
+    question: "Door wie worden wetten vastgesteld?",
+    answer: "De regering en de Staten-Generaal gezamenlijk",
+    variants: [`De gezamenlijke zitting van de Staten-Generaal`, `De koning, de ministers en de staatssecretarìssen`, `De regering en de Staten-Generaal gezamenlijk`, 
+    `Of door de centrale overheid of door de provinciale overheid of door de gemeentelijke overheid`]
+  },
+  {
+    id: 76,
+    question: "Een vertegenwoordiger van het wijkoverleg klaagt bij de wijkagent over overlast van<br>\
+    jongeren. Buurtbewoners hebben enkele jaren terug ook al geklaagd bij zowel de<br>\
+    gemeente als de politie.<br>\
+    <br>\
+    Tot hoeveel jaren terug kan de wijkagent kijken naar eventuele meldingen?",
+    answer: "5 jaar",
+    variants: [`6 maanden`, `1 jaar`, `5 jaar`, `10 jaar`]
+  },
+  {
+    id: 77,
+    question: "Welk voorwerp is vatbaar voor inbeslagneming in de zin van het Wetboek van<br>\
+    Strafvordering?",
+    answer: "een voorwerp dat kan dienen tot bewijs van een strafbaar feit",
+    variants: [`een voorwerp wat een aangehouden verdachte met zich voert`, `een voorwerp wat bij een fouillering wordt aangetroffen`, 
+    `een voorwerp wat eenvoudig gepakt kan worden door een opsporingsambtenaar`, `een voorwerp dat kan dienen tot bewijs van een strafbaar feit`]
+  },
+  // gebleven bij toets 2 33
+  // {
+  //   id: 10,
+  //   question: "",
+  //   answer: "A",
+  //   variants: [`A`, `B`, `C`, `D`]
+  // },
 ];

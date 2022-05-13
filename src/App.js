@@ -25,9 +25,9 @@ export default function App() {
   };
   
   const loadData = () => {
-    const loadedData = allData.sort(function(a, b){
-      return b.id - a.id;
-    });
+    // uncomment for live version 
+    const loadedData = allData.sort(() => .5 - Math.random()).slice(0,46);
+    //const loadedData = allData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
     setData(loadedData);
   };
 
@@ -46,6 +46,7 @@ export default function App() {
     setShow((show) => !show); //better to be toggled like this
   };
   const reset = () => {
+    loadData();
     setShow(false);
     setClickAnswer(false);
   };
@@ -96,8 +97,8 @@ export default function App() {
           <span className="m-2 border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
             {`${currentQuestionIndex}/${data.length - 1}`}
           </span>
-          {data[currentQuestionIndex].variants.sort(function(a, b){return 0.5 - Math.random()}).map((variant, index) => (
-            <div className="m-2 h-14 border-2 border-black mx-auto text-center" key={index}>
+          {data[currentQuestionIndex].variants.map((variant, index) => (
+            <div className="m-2 p-2 border-2 border-black mx-auto text-center" key={index}>
               <p
                 key={variant.id}
                 className={`variant ${
