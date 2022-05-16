@@ -25,9 +25,21 @@ export default function App() {
   };
   
   const loadData = () => {
+    let lsSkippedQuestions = localStorage.getItem('skippedQuestions') === null ? "[]" : localStorage.getItem('skippedQuestions');
+    let skippedQuestions = JSON.parse(lsSkippedQuestions);
+
+    let filteredAllData = allData.filter( (data) => {
+      return !skippedQuestions.includes(parseInt(data.id));
+    });
+
+    if(filteredAllData.length <= 45) {
+      resetSkippedQuestionArray();
+      return;
+    }
+
     // uncomment for live version 
-    const loadedData = allData.sort(() => .5 - Math.random()).slice(0,46);
-    //const loadedData = allData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
+    const loadedData = filteredAllData.sort(() => .5 - Math.random()).slice(0,46);
+    //const loadedData = filteredAllData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
     setData(loadedData);
   };
 
@@ -45,8 +57,8 @@ export default function App() {
   const showAnswer = () => {
     setShow((show) => !show); //better to be toggled like this
   };
+
   const reset = () => {
-    loadData();
     setShow(false);
     setClickAnswer(false);
   };
@@ -57,8 +69,16 @@ export default function App() {
     }
   };
 
-  const shuffleCurrentQuestionVariants = () => {
+  const resetSkippedQuestionArray = () => {
+    localStorage.setItem("skippedQuestions", "[]");
+    startOver();
+  };
 
+  const addToSkippedQuestionArray = (id) => {
+    let lsSkippedQuestions = localStorage.getItem('skippedQuestions') === null ? "[]" : localStorage.getItem('skippedQuestions');
+    let skippedQuestions = JSON.parse(lsSkippedQuestions);
+    skippedQuestions.push(id);
+    localStorage.setItem("skippedQuestions", JSON.stringify(skippedQuestions));
   };
 
   const startOver = () => {
@@ -66,6 +86,7 @@ export default function App() {
     setFinish(false);
     setMyAnswer("");
     setScore(0);
+    loadData();
   };
 
   if (!correctPassword) {
@@ -75,15 +96,26 @@ export default function App() {
       <div className="container m-4 p-4 mx-auto h-min-screen grid grid-rows-1 grid-cols-1 items-center">
         <div className="wrapper">
           <h3 className="m-4 p-2 h-30 text-center text-2xl font-bold">
-            {`Game Over! Your Final Score is
-            ${score}/${data.length - 1}
-            points.`}
+            {`Examen voorbij! Je score is 
+            ${score}/${data.length - 1}.`}
           </h3>
+          {score >= 33 && (
+            <div>
+              <div>Gefeliciteerd, je bent geslaagd!</div>
+              <div class="pyro">
+                <div class="before"></div>
+                <div class="after"></div>
+              </div>
+            </div>
+          )}
+          {score < 33 && (
+            <div>Oei, meer dan 12 fouten. Nog even doorleren!</div>
+          )}
           <button
             className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
             onClick={() => startOver()}
           >
-            Start Over
+            Nog een examen doen
           </button>
         </div>
       </div>
@@ -120,12 +152,12 @@ export default function App() {
               className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-200 text-blue-400 font-bold hover:bg-gray-400 hover:text-blue-600"
               onClick={() => showAnswer()}
             >
-              Show Answer
+              Toon antwoord
             </button>
           )}
           {show && (
             <p className="m-2 h-14 mx-auto text-center">
-              Correct Answer: {data[currentQuestionIndex].answer}
+              Correct antwoord: {data[currentQuestionIndex].answer}
             </p>
           )}
 
@@ -133,13 +165,13 @@ export default function App() {
             <button
               className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => {
+                addToSkippedQuestionArray(data[currentQuestionIndex].id);
                 setCurrentQuestionIndex(currentQuestionIndex + 1);
-                shuffleCurrentQuestionVariants();
                 checkCorrectAnswer();
                 reset();
               }}
             >
-              NEXT
+              Volgende vraag
             </button>
           )}
 
@@ -148,9 +180,18 @@ export default function App() {
               className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => finishHandler()}
             >
-              FINISH
+              Examen afronden
             </button>
           )}
+
+          <div className="h-10"></div>
+
+          <button
+            className="w-50 h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
+            onClick={() => resetSkippedQuestionArray()}
+          >
+            Reset alle vragen en begin opnieuw
+          </button>
 
           <footer className="m-4 text-center">
             <a
@@ -161,12 +202,7 @@ export default function App() {
             >
               Made by
             </a>{" "}<br></br>
-            Icon From <a
-              className="text-pink-400"
-              href="https://www.flaticon.com/"
-              target="_blank"
-              rel="noreferrer"
-            >flaticon</a>
+            Version 0.3
           </footer>
         </div>
       </div>
