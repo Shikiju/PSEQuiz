@@ -133,7 +133,7 @@ export const allData = [
   }, {
     id: 15,
     question: "Wanneer wordt de Raad voor de Rechtsbijstand in kennis gesteld als er een moord is<br>\
-    gepleegd? (antwoord onzeker?)",
+    gepleegd?",
     answer: "Nadat de beslissing is genomen dat de verdachte in verzekering wordt gesteld",
     variants: [`Nadat de verdachte is aangehouden`, `Nadat de Officier van Justitie toestemming heeft verleend tot aanhouding buiten
     heterdaad`, `Nadat de beslissing is genomen dat de verdachte in verzekering wordt gesteld`, `Nadat de verdachte daarom heeft gevraagd`]
@@ -224,10 +224,9 @@ export const allData = [
     toe en zegt: 'Als jij hier bekeuringen gaat uitschrijven, stomp ik jou in elkaar'<br>\
     <br>\
     Maakt de man zich schuldig aan een strafbaar feit?",
-    answer: "Ja, dit is een poging tot mishandeling van een ambtenaar en dat is altijd strafbaar",
+    answer: "Ja, de man dreigt met geweld om een bekeuring te voorkomen",
     variants: [`Ja, de man dreigt met geweld om een bekeuring te voorkomen`, `Ja, dit is een poging tot mishandeling van een ambtenaar en dat is altijd strafbaar`,
-    `Nee, de parkeerwachter was nog niet begonnen met het uitschrijven van een
-    bekeuring`, `Nee, pas als de man daadwerkelijk had gestompt, was hij strafbaar`]
+    `Nee, de parkeerwachter was nog niet begonnen met het uitschrijven van een bekeuring`, `Nee, pas als de man daadwerkelijk had gestompt, was hij strafbaar`]
   }, {
     id: 25,
     question: "Een journalist komt een witwaszaak op het spoor en publiceert hierover in een<br>\
@@ -293,7 +292,7 @@ export const allData = [
     id: 32,
     question: "Een politieagent wil een verdachte in zijn woning aanhouden. De agent legitimeert zich,<br>\
     vertelt het doel waarom hij wil binnentreden en toont de machtiging ex. artikel 2 AWBi.<br>\
-    Moet de politieagent nu ook nog toestemming vragen om binnen te treden? (antwoord onzeker?)",
+    Moet de politieagent nu ook nog toestemming vragen om binnen te treden?",
     answer: "Ja, hij moet voorafgaand aan het binnentreden alsnog toestemming vragen",
     variants: [`Ja, omdat dit wel zo beleefd is en om de werkrelatie goed te houden`, `Nee, legitimeren, doel bekend maken en machtiging tonen zijn de enige formaliteiten die vereist zijn alvorens de woning tegen de wil van de bewoner te mogen betreden`, 
     `Ja, hij moet voorafgaand aan het binnentreden alsnog toestemming vragen`, `Nee, het tonen van de machtiging is voldoende om tegen de wil van de bewoner te mogen binnentreden`]
@@ -803,7 +802,7 @@ export const allData = [
     question: "Een man berooft een vrouw. Hij drukt een mes tegen haar borst en zegt dat ze haar<br>\
     bankpas moet afgeven en hem de daarbijhorende pincode te geven.<br>\
     <br>\
-    Aan welk strafbaar feit maakt deze man zich schuldig? (antwoord onzeker?)",
+    Aan welk strafbaar feit maakt deze man zich schuldig?",
     answer: "Afpersing bankpas en pincode",
     variants: [`Diefstal met geweld van de bankpas en de pincode`, `Diefstal met geweld pas en afpersing pincode`, `Afpersing bankpas en pincode`, 
     `Afpersing bankpas maar niet van de code want dit is geen goed`]
@@ -914,7 +913,7 @@ export const allData = [
     proces-verbaal opgemaakt.<br>\
     <br>\
     Mag de politie om verhoor-tactische reden de inhoud van die processen—verbaal aan de<br>\
-    verdachte onthouden? (antwoord onzeker?)",
+    verdachte onthouden?",
     answer: "Nee, want hij heeft het recht op volledige kennisname van zijn verhoren",
     variants: [`Ja, maar slechts met toestemming van de officier van justitie`, `Nee, want hij heeft het recht op volledige kennisname van zijn verhoren`, 
     `Ja, indien dit om verhoor-tactische reden wenselijk is`, `Nee, maar hij hoeft niet de volledige inhoud van de verhoren te kennen`]
@@ -1149,9 +1148,210 @@ export const allData = [
     answer: "Nee, er zijn wel ernstige bezwaren maar de verdachte is nog niet aangehouden",
     variants: [`Nee, er zijn wel ernstige bezwaren maar de verdachte is nog niet aangehouden`, `Ja, de man is verdachte en hij is op heterdaad staande gehouden`, 
     `Ja, de man is verdachte en er bestaan tegen hem ernstige bezwaren`, `Nee, dit kan alleen in opdracht van een (hulp)officier van justitie`]
-  }
-  // gebleven bij toets 3 vraag 40
+  }, {
+    id: 135,
+    question: "Een politieman voert rechtmatig een veiligheidsfouillering uit. Bij deze fouillering doorzoekt de<br>\
+    politieman de jaszakken van deze persoon.<br>\
+    Mag de politieman de jaszakken doorzoeken ?",
+    answer: "Ja, als de veiligheid van de ambtenaar en de omgeving dit vraagt",
+    variants: [`Nee, jassen vallen niet onder de kleding die oppervlakkig mag worden afgetast`, `Ja, mits iemand van hetzelfde geslacht de veiligheidsfouillering uitvoert`, 
+    `Ja, als de veiligheid van de ambtenaar en de omgeving dit vraagt`, `Nee, hij mag alleen de kleding oppervlakkig aftasten`]
+  }, {
+    id: 136,
+    question: "Een agent surveilleert 's-nachts in een winkelstraat. Hij hoort glasgerinkel. Meteen daarna ziet<br>\
+    hij een man hard weglopen met lpad onder zijn arm.<br>\
+    Kan deze man als verdachte worden aangemerkt?",
+    answer: "Ja, er is sprake van een redelijk vermoeden van schuld aan een strafbaar feit gebaseerd op feiten of omstandigheden",
+    variants: [`Nee, ondanks een redelijk vermoeden dat hij het strafbare feit heeft begaan, is de vervolging nog niet aangevangen`, 
+    `Ja, omdat de vervolging is aangevangen, gebaseerd op feiten of omstandigheden`, 
+    `Ja, er is sprake van een redelijk vermoeden van schuld aan een strafbaar feit gebaseerd op feiten of omstandigheden`, 
+    `Nee, omdat het redelijk vermoeden van een strafbaar feit niet gebaseerd is op feiten of omstandigheden`]
+  }, {
+    id: 137,
+    question: "Een klant van een garagebedrijf wil de rekening van de reparatie van zijn auto niet betalen. De<br>\
+    garagehouder geeft daarom de auto niet mee.<br>\
+    Is de garagehouder hiertoe bevoegd?",
+    answer: "Ja, de garagehouder mag de auto achterhouden tot de rekening is betaald",
+    variants: [`Nee, de garagehouder pleegt dan een diefstal`, `Nee, de garagehouder moet de auto afgeven`, 
+    `Ja, de garagehouder mag de auto achterhouden tot de rekening is betaald`, `Ja, de auto blijft eigendom van de garagehouder zolang de rekening niet is betaald`]
+  }, {
+    id: 138,
+    question: "Een politieagent wil met een machtiging een woning betreden ter inbeslagneming van een gestolen ipad.<br>\
+    Er wordt na aanbellen niet opengedaan en de buren vertellen dat de bewoners met vakantie zijn.<br>\
+    Mag de politieagent de woning toch betreden?",
+    answer: "Ja, mits er sprake is van dringende noodzaak en de machtiging dit uitdrukkelijk bepaalt",
+    variants: [`Ja, de agent is voorzien van een machtiging tot binnentreden en dan mag hij altijd binnentreden`, 
+    `Ja, mits er sprake is van dringende noodzaak en de machtiging dit uitdrukkelijk bepaalt`, 
+    `Nee want er is geen hulpofficier van justitie aanwezig`, `Nee, je mag ter inbeslagneming niet binnentreden`]
+  }, {
+    id: 139,
+    question: "Een man dient bij de politie een klacht in wegens diefstal van zijn ipad, gepleegd door zijn<br>\
+    dochter. Die heeft dat echter niet gedaan en aangever weet dat zelf ook. Tijdens het gesprek<br>\
+    ontdekt de politie dat de klacht niet waar is.<br>\
+    Welk strafbaar feit pleegde de man?",
+    answer: "Het doen van een valse klacht",
+    variants: [`Het doen van een valse klacht`, `Geen, geen enkel delict is voltooid`, `Eenvoudige belediging`, `Hij pleegt smaad jegens zijn dochter`]
+  }, {
+    id: 140,
+    question: "Een lid van de Eerste Kamer heeft oplichting gepleegd door misbruik van zijn macht te maken.<br>\
+    Bij welk rechtscollege moet hij zich verantwoorden?",
+    answer: "De hoge Raad",
+    variants: [`De rechtbank`, `De Raad van State`, `Het gerechtshof`, `De hoge Raad`]
+  }, {
+    id: 141,
+    question: "Wat is geen geldig ID bewijs?",
+    answer: "Politielegitimatiebewijs",
+    variants: [`Nederlandse identiteitskaart`, `Paspoort`, `Politielegitimatiebewijs`, `Rijbewijs`]
+  }, {
+    id: 142,
+    question: "Twee agenten zien in de nachtdienst een personenauto stilstaan in een straat. Ze zien dat er<br>\
+    twee personen in deze auto zitten die lijken te slapen.<br>\
+    Zijn de agenten bevoegd de identiteit van deze twee personen vast te stellen?",
+    answer: "Ja, het is redelijkerwijs noodzakelijk voor de uitvoering van de politietaak",
+    variants: [`Ja, zij kunnen zich beroepen op een ambtelijk bevel`, `Nee, dat mag alleen in opdracht van de (H)OvJ`, 
+    `Nee, het optreden van de agenten is niet gerechtvaardigd op dit tijdstip`, `Ja, het is redelijkerwijs noodzakelijk voor de uitvoering van de politietaak`]
+  }, {
+    id: 143,
+    question: "Een politieagent betrapt op heterdaad een jongen die een ipad steelt. Als de agent de jongen<br>\
+    wil aanhouden rent hij een nabijgelegen woning binnen. Omdat de deur niet goed achter hem<br>\
+    in het slot valt, rent de agent hem achterna de woning in. In de hal krijgt hij de jongen te<br>\
+    pakken en houdt hem aan.<br>\
+    Mocht de agent de woning betreden om de jongen aan te houden?",
+    answer: "Ja, want in dit geval kan de machtiging achteraf worden verleend",
+    variants: [`Ja, want het is heterdaad en de deur was niet op slot`, `Ja, want in dit geval kan de machtiging achteraf worden verleend`, 
+    `Nee, want hij had geen machtiging tot binnentreden van de woning`, `Nee, want de identiteit van de jongen is eenvoudig te achterhalen`]
+  }, {
+    id: 144,
+    question: "Een portier zet een man het café uit. Eenmaal buiten maakt de man zich boos en probeert hij<br>\
+    de portier tot tweemaal toe op zijn gezicht te stompen. De portier ontwijkt de klappen.<br>\
+    Is de man strafbaar voor poging tot mishandeling?",
+    answer: "Nee, want poging tot eenvoudige mishandeling is niet strafbaar",
+    variants: [`Nee, want poging tot eenvoudige mishandeling is niet strafbaar`, `Ja, elke vorm van geweld is strafbaar`, 
+    `Ja, de man had de intentie om de portier te mishandelen`, `Nee, want de portier is niet geraakt`]
+  }, {
+    id: 145,
+    question: "Een man parkeert zijn auto op de openbare weg voor zijn woning. Na het afsluiten van zijn<br>\
+    auto verliest hij zijn autosleutel. Een passant vindt de autosleutel naast de auto, maakt de<br>\
+    auto daarmee open en rijdt ermee weg<br>\
+    De passant",
+    answer: "Heeft diefstal gepleegd door middel van een valse sleutel",
+    variants: [`Is bezitter te goeder trouw van de sleutel`, `Heeft eenvoudige diefstal gepleegd`, `Heeft geen diefstal gepleegd`, 
+    `Heeft diefstal gepleegd door middel van een valse sleutel`]
+  }, {
+    id: 146,
+    question: "Er heeft een gewapende overval plaatsgevonden op een benzinestation langs de rijksweg. De<br>\
+    rechter-commissaris voert een reconstructie uit in tegenwoordigheid van de officier van<br>\
+    justitie.<br>\
+    Wie is verantwoordelijk voor de handhaving van de orde tijdens deze reconstructie?",
+    answer: "De rechter-commissaris",
+    variants: [`De hoogste aanwezige politieman of politievrouw`, `De burgemeester`, `De officier van justitie`, `De rechter-commissaris`]
+  }, {
+    id: 147,
+    question: "Een politieagent gaat 's-nachts om vijf uur naar een woning om een verdachte buiten<br>\
+    heterdaad aan te houden wegens een gepleegde vernieling. De agent is in het bezit van een<br>\
+    machtiging ex artikel 2 AWBI afgegeven door een officier van justitie. Na aanbellen wordt er<br>\
+    niet opengedaan. De deur wordt geforceerd. Er blijkt niemand thuis te zijn.<br>\
+    Is in deze casus rechtmatig binnengetreden?",
+    answer: "Nee, dringende noodzaak ontbreekt en dat is een vereiste om 's nachts een woning te mogen betreden",
+    variants: [`Ja, mits het verbreken van de deur volgens het subsidiariteits- en proportionaliteitsbeginsel is gebeurd`, 
+    `Ja, een machtiging geeft automatisch de bevoegdheid tot binnentreden, ongeacht of de bewoner wel of niet aanwezig is`, 
+    `Nee, de deur mag niet geforceerd worden met zo'n machtiging`, 
+    `Nee, dringende noodzaak ontbreekt en dat is een vereiste om 's nachts een woning te mogen betreden`]
+  }, {
+    id: 148,
+    question: "Is een politieman bevoegd om buiten heterdaad een voorwerp dat vatbaar is voor<br>\
+    inbeslagneming in beslag te nemen?",
+    answer: "Ja, als er sprake is van verdenking van een misdrijf als omschreven in art. 67 lid 1 WvSv",
+    variants: [`Ja, als er sprake is van verdenking van een misdrijf als omschreven in art. 67 lid 1 WvSv`, 
+    `Nee, inbeslagneming buiten heterdaad is niet toegestaan`, `Ja, met toestemming van de rechter-commissaris`, 
+    `Nee, voor inbeslagneming buiten heterdaad is toestemming nodig van de (h)OvJ`]
+  }, {
+    id: 149,
+    question: "Een verdachte legt op het politiebureau tijdens zijn eerste verhoor een verklaring af. De politie<br>\
+    wil de verdachte nader horen. Als het zover is wil de verdachte zijn eerste verklaring nog eens<br>\
+    doorlezen.<br>\
+    Heeft de verdachte daar recht op?",
+    answer: "Ja, het proces-verbaal van zijn eerste verhoor mag hem niet worden onthouden",
+    variants: [`Ja, maar na afloop van het tweede verhoor`, `Nee, tenzij de officier van justitie daar anders over beslist`, 
+    `Nee, dat is niet in het belang van de waarheidsvinding`, `Ja, het proces-verbaal van zijn eerste verhoor mag hem niet worden onthouden`]
+  }, {
+    id: 150,
+    question: "Een politieman verkoopt informatie uit de politiesystemen. Op schending van een geheim<br>\
+    staat maximaal 1 jaar gevangenisstraf en een geldboete van de vierde categorie.<br>\
+    Met hoeveel kan de op het feit gestelde straf worden verhoogd?",
+    answer: "De gevangenisstraf kan met 1/3 worden verhoogd, de geldboete niet",
+    variants: [`De straf kan niet worden verhoogd`, `Zowel de gevangenisstraf als de geldboete kan met 1/3 worden verhoogd`, 
+    `De gevangenisstraf kan met 1/3 worden verhoogd, de geldboete niet`, `De gevangenisstraf kan met 1/2 worden verhoogd`]
+  }, {
+    id: 151,
+    question: "Een agent doet in zijn vrije tijd boodschappen op de markt. Plotseling wordt hij door een man<br>\
+    in de winkel beledigd, De man blijkt de vorige dag een bekeuring van de man te hebben<br>\
+    gehad.<br>\
+    Kan de man zwaarder worden gestraft?",
+    answer: "Ja, omdat hij een agent beledigde naar aanleiding van een eerder verkregen bekeuring",
+    variants: [`Nee, want de belediging gebeurde niet terwijl de agent aan het werk was`, 
+    `Ja, omdat hij een agent beledigde naar aanleiding van een eerder verkregen bekeuring`, 
+    `Nee, want dit is een eenvoudige belediging`, `Ja, hier is sprake van smaad`]
+  }, {
+    id: 152,
+    question: "Een man zoekt elke week dezelfde bekende thuis op en vraagt haar telkens ten huwelijk.<br>\
+    onder aanbieding van een bosje bloemen. De vindt dit vreselijk maar zij durft de politie er niet bij<br>\
+    te halen. Zij vertelt het haar buurman.<br>\
+    Haar buurman stapt naar de politie het doet van aangifte van belaging omdat hij kennis van dat<br>\
+    feit draagt.<br>\
+    Zou de belager hunnen worden vervolgd op van deze aangifte?",
+    answer: "Nee. belaging is alleen op klacht van de presentatrice vervolgbaar",
+    variants: [`Een ieder die kennis draagt ven een feit is bevoegd aangifte te doen`, 
+    `Ja, belaging ambtshalve worden vervolgd door de politie`, 
+    `Nee. belaging is alleen op klacht van de presentatrice vervolgbaar`, `Nee, belaging moet stelselmatig gebeuren en daar is geen sprake van`]
+  }, {
+    id: 153,
+    question: "Een politieambtenaar maakt een mutatie op in BVH terzake een aanrijding.<br>\
+    Welke regelgeving is ven toepassing voor de verwerking van persoonsgegevens van de betrokkene?",
+    answer: "De wet politiegegevens",
+    variants: [`Wet bescherming persoonsgegevens`, `De Politiewet`, `De wet politiegegevens`, `Het besluit algemene rechtspositie politie`]
+  }, {
+    id: 154,
+    question: "Tijdens een verkeerscontrole vordert een politieagent van een 14-jarige jongen een identiteitsbewijs ter<br>\
+    inzage. De jongen voldoet niet aan de vordering. maar laat zijn schoolagenda zien met daarin zijn naam.<br>\
+    Welke bewering is juist?",
+    answer: "De jongen is verplicht op eerste vordering een identiteitsbewijs te tonen",
+    variants: [`De jongen is verplicht op eerste vordering een identiteitsbewijs te tonen`, 
+    `De agenda bevat zijn naam. Daarmee heeft de jongen aan de vordering voldaan`, 
+    `De jongen is niet verplicht op eerste vordering een identiteitsbewijs te tonen`, 
+    `De jongen is hiertoe alleen verplicht als hij een strafbaar feit heeft gepleegd`]
+  }, {
+    id: 155,
+    question: "Is een opsporingsambtenaar bevoegd buiten het geval van ontdekking op heterdaad een verdachte<br>\
+    staande te houden?",
+    answer: "Voor alle feiten",
+    variants: [`Alleen het van een valse naam`, `Van een valse naam en voor feiten waarop voorlopige hechtenis is toegelaten`, 
+    `Voor alle feiten`, `Alleen voor feiten waarop voorlopige hechtenis is toegelaten`]
+  }, {
+    id: 156,
+    question: "Een agent ontbiedt een getuige aan het bureau om een verklaring af te leggen.<br>\
+    Is de agent verplicht deze persoon mee te delen dat hij getuige is?",
+    answer: "Ja, hij is verplicht dit mee te delen",
+    variants: [`Ja, op verzoek van de getuige`, `Nee, dit is wettelijk niet geregeld`, 
+    `Nee, dit is een taak van de (h)OvJ`, `Ja, hij is verplicht dit mee te delen`]
+  },
   // {
+  //   id: 157,
+  //   question: "De benadeelde van een strafbaar feit wil zich voegen in het strafproces.<br>\
+  //   Wat houdt dat in?",
+  //   answer: "A",
+  //   variants: [`A`, `B`, `C`, `D`]
+  // }, //{
+  //   id: 10,
+  //   question: "",
+  //   answer: "A",
+  //   variants: [`A`, `B`, `C`, `D`]
+  // }, {
+  //   id: 10,
+  //   question: "",
+  //   answer: "A",
+  //   variants: [`A`, `B`, `C`, `D`]
+  // }, {
   //   id: 10,
   //   question: "",
   //   answer: "A",

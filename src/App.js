@@ -11,6 +11,8 @@ export default function App() {
   const [clickAnswer, setClickAnswer] = useState(false);
   const [data, setData] = useState([{id: -1, question: 'loading', variants: ['loading', 'loading']}]);
   const [correctPassword, setCorrectPassword] = useState(false);
+  const [totalQuestionCount, setTotalQuestionCount] = useState(0);
+  const [totalSkippedQuestionCount, setTotalSkippedQuestionCount] = useState(0);
   
   useEffect(() => {
     console.log(`Initial load`);
@@ -27,6 +29,9 @@ export default function App() {
   const loadData = () => {
     let lsSkippedQuestions = localStorage.getItem('skippedQuestions') === null ? "[]" : localStorage.getItem('skippedQuestions');
     let skippedQuestions = JSON.parse(lsSkippedQuestions);
+
+    setTotalQuestionCount(allData.length);
+    setTotalSkippedQuestionCount(skippedQuestions.length);
 
     let filteredAllData = allData.filter( (data) => {
       return !skippedQuestions.includes(parseInt(data.id));
@@ -78,6 +83,7 @@ export default function App() {
     let lsSkippedQuestions = localStorage.getItem('skippedQuestions') === null ? "[]" : localStorage.getItem('skippedQuestions');
     let skippedQuestions = JSON.parse(lsSkippedQuestions);
     skippedQuestions.push(id);
+    setTotalSkippedQuestionCount(skippedQuestions.length);
     localStorage.setItem("skippedQuestions", JSON.stringify(skippedQuestions));
   };
 
@@ -193,6 +199,10 @@ export default function App() {
             Reset alle vragen en begin opnieuw
           </button>
 
+          <span className="m-2 float-right border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
+            Je hebt {totalSkippedQuestionCount} van de in totaal {totalQuestionCount} vragen gezien.
+          </span>
+
           <footer className="m-4 text-center">
             <a
               className="text-pink-400"
@@ -202,7 +212,7 @@ export default function App() {
             >
               Made by
             </a>{" "}<br></br>
-            Version 0.3
+            Version 0.4.1
           </footer>
         </div>
       </div>
