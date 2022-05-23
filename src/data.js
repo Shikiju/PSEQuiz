@@ -1195,8 +1195,59 @@ export const allData = [
   }, {
     id: 180,
     question: "Je voert rechtmatig een veiligheidsfouillering uit. De persoon die de fouillering moet ondergaan belemmert met geweld de ambtshandeling. Welke onderstaande stelling is dan juist?",
-    answer: "Ja, hij is strafbaar voor poging tot ambtsdwang",
+    answer: "In dit geval maakt de persoon zich schuldig aan het misdrijf wederspannigheid",
     variants: [`In dit geval maakt de persoon zich schuldig aan het misdrijf wederspannigheid`, `In dit geval ontbreken wettelijke middelen om het onderzoek aan de kleding te voltooien`, `Verzet tegen een onderzoek aan de kleding, zonder dat dit voorafgegaan wordt door een aanhouding, kan niet worden aangemerkt als een onwettige handeling en dient derhalve te worden gedoogd`, `In dit geval zal het geoorloofd zijn om de persoon met de wapenstok, tot andere gedachten te brengen, zodat het onderzoek daarna alsnog kan worden uitgevoerd`]
+  }, {
+    id: 181,
+    question: "De ambtenaar die een gift, belofte of dienstverlening aanneemt om in strijd met zijn plicht iets te doen, pleegt.....",
+    answer: "Passieve omkoping",
+    variants: [`Geen strafbaar feit`, `Passieve omkoping`, `Actieve omkoping`, `Begunstiging`]
+  }, {
+    id: 182,
+    question: "Een ambtenaar loopt in zijn vrije tijd op de markt. Plotseling wordt hij door een man meermalen beledigd. De dader blijkt de vorige dag een bekeuring van de ambtenaar te hebben gehad en beledigde hem om die reden. Pleegde de dader belediging van een ambtenaar?",
+    answer: "Ja, want het is belediging ter zake de rechtmatige uitoefening van zijn bediening",
+    variants: [`Nee, maar wel eenvoudige belediging`, `Nee, maar wel ambtsdwang`, `Ja, want ook in zijn vrije tijd kan een ambtenaar beledigd worden`, `Ja, want het is belediging ter zake de rechtmatige uitoefening van zijn bediening`]
+  }, {
+    id: 183,
+    question: "Welke juridische benamingen hanteren we voor de verschillende onderdelen van een artikel?",
+    answer: "Bestanddeel, norm, kwalificatie en sanctie",
+    variants: [`Normdeel, bestanddeel, kwalificatie en sanctie`, `Bestanddeel, doel, kwalificatie en sanctie`, `Bestanddeel, norm, kwalificatie en sanctie`, `Doel, normdeel, bestanddeel en kwalificatie`]
+  }, {
+    id: 184,
+    question: "Wim heeft het voornemen om een fiets te gaan stelen. Hij ziet een fiets staan en loopt er naar toe. Op het moment dat hij de fiets wil pakken komt de eigenaar en rijdt op de fiets weg. Kan Wim ter zake poging tot diefstal worden gestraft?",
+    answer: "Nee, want er was nog geen begin van uitvoering van diefstal",
+    variants: [`Ja`, `Ja, want hij had de opzet om te stelen`, `Nee, want er was nog geen begin van uitvoering van diefstal`, `Nee, want de eigenaar reed vrijwillig weg`]
+  }, {
+    id: 185,
+    question: "Fred krijgt van Johan twee klappen in het gezicht en een stomp in zijn maag. Twee dagen later ziet Fred op straat Johan aankomen. Nog voor Johan iets gezegd heeft slaat Fred hem met een ijzeren staaf op zijn hoofd. Is er sprake van noodweerexces?",
+    answer: "Nee, er is geen sprake van een ogenblikkelijke wederrechtelijke aanranding",
+    variants: [`Ja, Fred mag verwachten dat Johan hem weer komt slaan en schoppen`, `Ja, het is proportioneel om dit te doen`, `Nee, er is geen sprake van een ogenblikkelijke 
+    wederrechtelijke aanranding`, `Nee, tenzij de eerste mishandeling nog op heterdaad is`]
+  }, {
+    id: 186,
+    question: "Het materieel strafrecht.....",
+    answer: "Beschrijft de strafbare gedragingen en de maximumstraffen",
+    variants: [`Beschrijft de strafbare gedragingen en de maximumstraffen`, `Beschrijft hoofdzakelijk de bevoegdheden van de politie`, `Geeft alleen regels voor de politie als er eenmaal een strafbaar feit is gepleegd`, `Geeft regels aan de rechters voor de maximumstraffen die ze kunnen opleggen`]
+  }, {
+    id: 187,
+    question: "Voor welke van de volgende strafbare feiten is voorlopige hechtenis toegelaten?",
+    answer: "Alle misdrijven waarop naar de wettelijke omschrijving een gevangenisstraf van vier jaar of meer is gesteld",
+    variants: [`Alle misdrijven waarop naar de wettelijke omschrijving een gevangenisstraf van twee jaar of meer is gesteld`, `Alle misdrijven waarop naar de wettelijke omschrijving een gevangenisstraf van vier jaar of meer is gesteld`, `Alle strafbare feiten die in het Wetboek van Strafrecht als misdrijf worden aangemerkt`, `Alle strafbare feiten die wel in het Wetboek van Strafrecht maar niet in bijzondere wetten of verordeningen staan genoemd`]
+  }, {
+    id: 188,
+    question: "Wat betekent de uitdrukking 'tegen de verdachte bestaan ernstige bezwaren'?",
+    answer: "Er bestaat een grote mate van waarschijnlijkheid dat de verdachte schuldig is aan het gepleegde feit",
+    variants: [`De verdachte heeft zich bij zijn aanhouding met geweld verzet tegen de opsporingsambtenaar`, `Er bestaat een grote mate van waarschijnlijkheid dat de verdachte schuldig is aan het gepleegde feit`, `Er bestaat een op feiten of omstandigheden gebaseerd redelijk vermoeden dat de verdachte schuldig is aan het gepleegde feit`, `Tegen de verdachte bestaat verdenking van een feit waarvoor voorlopige hechtenis is toegelaten`]
+  }, {
+    id: 189,
+    question: "Wie is bevoegd tot het staande houden van een verdachte?",
+    answer: "Iedere opsporingsambtenaar",
+    variants: [`Een ieder`, `Een ieder, maar alleen in geval van een strafbaar feit waarvoor voorlopige hechtenis is toegelaten`, `Iedere opsporingsambtenaar`, `Iedere opsporingsambtenaar, maar alleen bij ontdekking van een strafbaar feit op heterdaad`]
+  }, {
+    id: 190,
+    question: "Je surveilleert op een bouwterrein in een in aanbouw zijnde woonwijk, waarvan bekend is dat daar de laatste tijd veel bouwmaterialen worden gestolen. Je ziet op het bouwterrein een personenauto rijden. Je geeft de bestuurder een stopteken en je vraagt of je even in de kofferbak van de auto mag kijken. De bestuurder weigert dit toe te staan. Is de bestuurder voor jou verdachte?",
+    answer: "Nee, het vermoeden dat de bestuurder van deze personenauto een strafbaar feit heeft begaan is niet gebaseerd op feiten of omstandigheden",
+    variants: [`Ja, hier is sprake van een redelijk vermoeden van schuld aan een strafbaar feit gebaseerd op feiten en/of omstandigheden`, `Nee, het vermoeden dat de bestuurder van deze personenauto een strafbaar feit heeft begaan is niet gebaseerd op feiten of omstandigheden`, `Ja, de vervolging van een strafbaar feit is aangevangen gebaseerd op feiten en/of omstandigheden`, `Nee, ondanks een redelijk vermoeden dat deze bestuurder een strafbaar feit heeft gepleegd is de opsporing van dit strafbare feit nog niet aangevangen`]
   }//{
   //   id: 10,
   //   question: "",
