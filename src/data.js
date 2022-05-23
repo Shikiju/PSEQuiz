@@ -298,7 +298,7 @@ export const allData = [
     Mag de politie de Plus supermarkt betreden ter aanhouding van deze man?",
     answer: "Ja iedere opsporingsambtenaar is bevoegd",
     variants: [`Nee, want het betreft een overtreding`, `Ja, met een machtiging tot aanhouding`, `Ja iedere opsporingsambtenaar is bevoegd`, 
-    `Nee, daarvoor is een machtiging ex. Artikel 2 Mbi vereist`]
+    `Nee, daarvoor is een machtiging ex. artikel 2 AWBi vereist`]
   }, {
     id: 46,
     question: "Wie heeft de leiding bij de GHOR?",
@@ -648,11 +648,11 @@ export const allData = [
   }, {
     id: 99,
     question: "Tijdens een buurtonderzoek word je geconfronteerd met een getuige die belangrijke informatie heeft achtergehouden aangaande een overval.<br>\
-    Kun je nu van deze getuige vorderen dat hij zijn identiteitsbewìjs toont?",
+    Kun je nu van deze getuige vorderen dat hij zijn identiteitsbewijs toont?",
     answer: "Ja, voor de uitvoering van de politietaak moet je over de juiste gegevens van de getuige beschikken",
     variants: [`Nee, je kunt het wel verzoeken maar vorderen kan alleen bij een verdachte`, 
     `Nee, je kunt dit bij een getuige niet vorderen. Dit is nog niet geregeld in het Wetboek van Strafvordering`, 
-    `Ja, een ieder is verplicht op vordering van de politieambtenaar om zijn identiteitsbewìjs te tonen`, 
+    `Ja, een ieder is verplicht op vordering van de politieambtenaar om zijn identiteitsbewijs te tonen`, 
     `Ja, voor de uitvoering van de politietaak moet je over de juiste gegevens van de getuige beschikken`]
   }, {
     id: 100,
@@ -818,12 +818,7 @@ export const allData = [
     `Ja, mits de verdachte het horloge vrijwillig afgeeft`, `Nee, want hij weet niet zeker of dat horloge het gestolen exemplaar is`]
   }, {
     id: 124,
-    question: "Een medespeler uit jouw volleybalteam vertelt dat hij vanwege problemen thuis<br>\
-    voor de komende nacht een slaapgelegenheid zoekt. Je neemt hem meer naar<br>\
-    huis en wijst een slaapplaats aan. Als iedereen slaapt ziet hij op de overloop een<br>\
-    duur horloge op een kastje liggen. Hij neemt dit horloge mee en verlaat schielijk<br>\
-    jouw woning.<br>\
-    <br>\
+    question: "Een medespeler uit jouw volleybalteam vertelt dat hij vanwege problemen thuis voor de komende nacht een slaapgelegenheid zoekt. Je neemt hem meer naar huis en wijst een slaapplaats aan. Als iedereen slaapt ziet hij op de overloop een duur horloge op een kastje liggen. Hij neemt dit horloge mee en verlaat schielijk jouw woning.  <br>\
     Aan welk strafbaar feit maakt hij zich schuldig?",
     answer: "Er is hier sprake van eenvoudige diefstal, 310 Wetb. V. Sr.",
     variants: [`Diefstal met geweld, hij doet de verleende gastvrijheid geweld aan`, `Gekwalificeerde diefstal in de voor de nachtrust bestemde tijd`, 
@@ -1149,12 +1144,60 @@ export const allData = [
     question: "Als een fietser per ongeluk tegen een geparkeerde auto botst en een kras veroorzaakt valt dit onder",
     answer: "Burgelijk recht",
     variants: [`Burgelijk recht`, `Schadevergoeding`, `Strafrecht`, `Bestuursrecht`]
-  },// {
-  //   id: 171,
-  //   question: "Iemand verteld dat er een diefstal heeft plaatsgevonden welke gepleegd is door de schoonzus van het slachtoffer. Wat is de opsporingsambtenaar verplicht?",
-  //   answer: "De persoon mededelen dat er een klacht ingediend kan worden door het slachtoffer bij de HOvJ",
-  //   variants: [`De persoon mededelen dat er een klacht ingediend kan worden door het slachtoffer bij de HOvJ`, `De persoon mededelen dat hij hiervan aangifte kan doen bij de HOvJ`, `De persoon mededelen dat de schoonzus niet strafbaar is vanwege het verschoningsrecht`, `De persoon mededelen dat deze binnen drie maanden aangifte moet doen`]
-  // }//{
+  }, {
+    id: 171,
+    question: "Het kabinet is:",
+    answer: "De ministers en staatsecretarissen",
+    variants: [`De regering en tweede kamer`, `De koning en ministers`, `De ministers en staatsecretarissen`, `De koning en het parlement`]
+  }, {
+    id: 172,
+    question: "Wie stellen in de provincie en gemeente de verordeningen vast?",
+    answer: "Provinciale Staten en de gemeenteraad",
+    variants: [`Provinciale staten en het College van burgemeester en wethouders`, `Provinciale Staten en de gemeenteraad`, `Gedeputeerde Staten en de gemeenteraad`, `Gedeputeerde Staten en de burgemeester`]
+  }, {
+    id: 173,
+    question: "De macht in Nederland is verdeeld in:",
+    answer: "Wetgevende, uitvoerende en rechterlijke macht",
+    variants: [`Wetgevende, uitvoerende en rechterlijke macht`, `Burgerlijke, militaire en rechterlijke macht`, `Staten-Generaal, Provinciale staten en Gemeenteraad`, `Rijk, provincies en gemeenten`]
+  }, {
+    id: 174,
+    question: "Door wie worden de leden van de provinciale staten gekozen?",
+    answer: "Nederlanders, tevens ingezetenen van de provincie die de vereiste minimumleeftijd bezitten",
+    variants: [`De leden van het parlement`, `Nederlanders, tevens ingezetenen van de provincie die de vereiste minimumleeftijd bezitten`, 
+    `Meerderjarige ingezetenen van de provincie`, `Bewoners van de provincie die de vereiste minimumleeftijd hebben bereikt`]
+  }, {
+    id: 175,
+    question: "Door wie worden de leden van Gedeputeerde Staten benoemd?",
+    answer: "De leden van de Provinciale Staten",
+    variants: [`De leden van de gemeenteraden in de provincie`, `De leden van de Provinciale Staten`, `De Commissaris van de Koning`, `De minister van Binnenlandse Zaken en Koninkrijkrelaties`]
+  }, {
+    id: 176,
+    question: "Welke van de volgende bestuursorganen wordt rechtstreeks gekozen?",
+    answer: "Provinciale Staten",
+    variants: [`Eerste Kamer`, `Gedeputeerde Staten`, `Provinciale Staten`, `College van Burgemeester en Wethouders`]
+  }, {
+    id: 177,
+    question: "Hoe noemt men het beginsel dat een buitenlander, die zich in Nederland aan een strafbaar feit schuldig maakt, onder de Nederlandse strafwet valt?",
+    answer: "Territorialiteitsbeginsel",
+    variants: [`Gelijkheidsbeginsel`, `Vlagbeginsel`, `Universaliteitsbeginsel`, `Territorialiteitsbeginsel`]
+  }, {
+    id: 178,
+    question: "Kan in het algemeen een verdachte, die in staat van dronkenschap een strafbaar feit heeft gepleegd, voor het plegen van dat feit ontoerekenbaar worden verklaard omdat hij dronken was?",
+    answer: "Nee, hij wordt verantwoordelijk gehouden voor het gepleegde strafbare feit",
+    variants: [`Ja, hij kan daarvoor zowel verminderd toerekenbaar als geheel ontoerekenbaar worden verklaard`, `Ja, maar hij kan daarvoor alleen verminderd toerekenbaar worden
+    verklaard`, `Nee, alleen blijvende stoornissen van de geestvermogens kunnen leiden tot een ontoerekenbaarverklaring`, `Nee, hij wordt verantwoordelijk gehouden voor het gepleegde strafbare feit`]
+  }, {
+    id: 179,
+    question: "Een buitengewoon opsporingsambtenaar in uniform ziet een persoon een portemonnee stelen uit de tas van een vrouw. Hij zegt tegen hem: “Je bent aangehouden.” De verdachte wil vluchten en roept: “Als je me aanraakt, sla ik je hersens in”. De opsporingsambtenaar, die bevoegd is om alle misdrijven van het Wetboek van strafrecht op te sporen, pakt hem beet, brengt hem zonder problemen over naar het bureau en geleidt hem voor een hovj. <br>\
+    Is deze verdachte alleen strafbaar voor diefstal of heeft hij nog een ander misdrijf gepleegd?",
+    answer: "Ja, hij is strafbaar voor poging tot ambtsdwang",
+    variants: [`Ja, hij is strafbaar voor poging tot ambtsdwang`, `Ja, want hij belemmerde een ambtshandeling van een opsporingsambtenaar`, `Nee, want een verdachte is niet verplicht mee te werken aan zijn aanhouding`, `Nee, want hij pleegde geen verzet`]
+  }, {
+    id: 180,
+    question: "Je voert rechtmatig een veiligheidsfouillering uit. De persoon die de fouillering moet ondergaan belemmert met geweld de ambtshandeling. Welke onderstaande stelling is dan juist?",
+    answer: "Ja, hij is strafbaar voor poging tot ambtsdwang",
+    variants: [`In dit geval maakt de persoon zich schuldig aan het misdrijf wederspannigheid`, `In dit geval ontbreken wettelijke middelen om het onderzoek aan de kleding te voltooien`, `Verzet tegen een onderzoek aan de kleding, zonder dat dit voorafgegaan wordt door een aanhouding, kan niet worden aangemerkt als een onwettige handeling en dient derhalve te worden gedoogd`, `In dit geval zal het geoorloofd zijn om de persoon met de wapenstok, tot andere gedachten te brengen, zodat het onderzoek daarna alsnog kan worden uitgevoerd`]
+  }//{
   //   id: 10,
   //   question: "",
   //   answer: "A",

@@ -43,9 +43,27 @@ export default function App() {
       return;
     }
 
-    // uncomment for live version 
-    //const loadedData = filteredAllData.sort(() => .5 - Math.random()).slice(0,46);
-    const loadedData = filteredAllData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
+    const windowUrl = window.location.search;
+    const deeplinkMatch = windowUrl.match(new RegExp("[?&]deeplink=([^&]+).*$"));
+    const deeplink = deeplinkMatch === null ? null : deeplinkMatch[1];
+    const alternativeSortMatch = windowUrl.match(new RegExp("[?&]alternativeSort=([^&]+).*$"));
+    const alternativeSort = alternativeSortMatch === null ? null : alternativeSortMatch[1];
+
+    let deeplinkData = null;
+    if(deeplink !== null) {
+      const deepLinkResult = filteredAllData.find( ({id}) => id === parseInt(deeplink));
+      deeplinkData = deepLinkResult;
+    }
+    let loadedData = [];
+    if(alternativeSort) {
+      loadedData = filteredAllData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
+    } else  {
+      loadedData = filteredAllData.sort(() => .5 - Math.random()).slice(0,46);
+    }
+    if(deeplinkData !== null) {
+      loadedData[0] = deeplinkData;
+    }
+
     setData(loadedData);
   };
 
@@ -150,11 +168,14 @@ export default function App() {
           <span className="m-2 border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
             {`${currentQuestionIndex}/${data.length - 1}`}
           </span>
+          <span className="m-2 ml-5 border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
+            Score: {`${score}`}
+          </span>
           {data[currentQuestionIndex].variants.map((variant, index) => (
-            <div className="m-2 p-2 border-2 border-black mx-auto text-center" key={index}>
+            <div className="m-2 border-2 border-black mx-auto text-center" key={index}>
               <p
                 key={variant.id}
-                className={`variant ${
+                className={`p-2 variant ${
                   myAnswer === variant
                     ? myAnswer === data[currentQuestionIndex].answer
                       ? "correctAnswer"
@@ -217,6 +238,10 @@ export default function App() {
             </button>
           )}
 
+          <div className="mt-5 h-10 w-full clear-both text-pink-400 hover:text-pink-600">
+            <a href={window.location.origin+"?deeplink="+data[currentQuestionIndex].id} target="_blank">Klik hier voor een deeplink naar deze vraag</a>
+          </div>
+
           <div className="h-10 clear-both">
             <button
               className="w-50 h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
@@ -230,14 +255,6 @@ export default function App() {
             </span>
           </div>
           <footer className="m-4 text-center w-full clear-both">
-            <a
-              className="text-pink-400"
-              href="https://nl.wikipedia.org/wiki/Anonymous_%28collectief%29"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Made by
-            </a>{" "}<br></br>
             Version {packageJson.version}
           </footer>
         </div>
