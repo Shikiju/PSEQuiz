@@ -1,6 +1,6 @@
 {
-  "name": "riddle-quiz-app",
-  "version": "1.0.0",
+  "name": "psi-quiz-app",
+  "version": "0.5.2",
   "description": "",
   "keywords": [],
   "main": "src/index.js",

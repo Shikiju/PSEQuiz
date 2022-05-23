@@ -1,6 +1,7 @@
 import "./styles.css";
 import React, { useState, useEffect } from "react";
 import { allData } from "./data";
+import packageJson from './../package.json';
 
 export default function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -43,8 +44,8 @@ export default function App() {
     }
 
     // uncomment for live version 
-    const loadedData = filteredAllData.sort(() => .5 - Math.random()).slice(0,46);
-    //const loadedData = filteredAllData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
+    //const loadedData = filteredAllData.sort(() => .5 - Math.random()).slice(0,46);
+    const loadedData = filteredAllData.sort(function(a, b){ return b.id - a.id; }).slice(0,46);
     setData(loadedData);
   };
 
@@ -77,6 +78,20 @@ export default function App() {
   const resetSkippedQuestionArray = () => {
     localStorage.setItem("skippedQuestions", "[]");
     startOver();
+  };
+
+  const removeFromSkippedQuestionArray = (id) => {
+    if(localStorage.getItem('skippedQuestions') === null) {
+      return;
+    }
+    let lsSkippedQuestions = localStorage.getItem('skippedQuestions');
+    let skippedQuestions = JSON.parse(lsSkippedQuestions);
+    const index = skippedQuestions.indexOf(id);
+    if (index > -1) {
+      skippedQuestions.splice(index, 1);
+    }
+    setTotalSkippedQuestionCount(skippedQuestions.length);
+    localStorage.setItem("skippedQuestions", JSON.stringify(skippedQuestions));
   };
 
   const addToSkippedQuestionArray = (id) => {
@@ -167,9 +182,21 @@ export default function App() {
             </p>
           )}
 
+          {currentQuestionIndex > 0 && (
+            <button
+              className="w-2/5 h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
+              onClick={() => {
+                removeFromSkippedQuestionArray(data[currentQuestionIndex].id);
+                setCurrentQuestionIndex(currentQuestionIndex - 1);
+                reset();
+              }}
+            >
+              Vorige vraag
+            </button>
+          )}
           {currentQuestionIndex < data.length - 1 && (
             <button
-              className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
+              className="w-2/5 float-right h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => {
                 addToSkippedQuestionArray(data[currentQuestionIndex].id);
                 setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -183,27 +210,26 @@ export default function App() {
 
           {currentQuestionIndex === data.length - 1 && (
             <button
-              className="w-full h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
+              className="w-2/5 h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
               onClick={() => finishHandler()}
             >
               Examen afronden
             </button>
           )}
 
-          <div className="h-10"></div>
+          <div className="h-10 clear-both">
+            <button
+              className="w-50 h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
+              onClick={() => resetSkippedQuestionArray()}
+            >
+              Reset alle vragen en begin opnieuw
+            </button>
 
-          <button
-            className="w-50 h-14 mt-2 px-2 rounded-lg bg-gray-600 text-pink-400 font-bold hover:bg-gray-800 hover:text-pink-600"
-            onClick={() => resetSkippedQuestionArray()}
-          >
-            Reset alle vragen en begin opnieuw
-          </button>
-
-          <span className="m-2 float-right border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
-            Je hebt {totalSkippedQuestionCount} van de in totaal {totalQuestionCount} vragen gezien.
-          </span>
-
-          <footer className="m-4 text-center">
+            <span className="m-2 mt-5 float-right border-2 border-black mx-auto px-2 bg-gray-600 text-pink-400 rounded-lg text-center">
+              Je hebt {totalSkippedQuestionCount} van de in totaal {totalQuestionCount} vragen gezien.
+            </span>
+          </div>
+          <footer className="m-4 text-center w-full clear-both">
             <a
               className="text-pink-400"
               href="https://nl.wikipedia.org/wiki/Anonymous_%28collectief%29"
@@ -212,7 +238,7 @@ export default function App() {
             >
               Made by
             </a>{" "}<br></br>
-            Version 0.4.1
+            Version {packageJson.version}
           </footer>
         </div>
       </div>
