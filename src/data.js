@@ -1248,6 +1248,41 @@ export const allData = [
     question: "Je surveilleert op een bouwterrein in een in aanbouw zijnde woonwijk, waarvan bekend is dat daar de laatste tijd veel bouwmaterialen worden gestolen. Je ziet op het bouwterrein een personenauto rijden. Je geeft de bestuurder een stopteken en je vraagt of je even in de kofferbak van de auto mag kijken. De bestuurder weigert dit toe te staan. Is de bestuurder voor jou verdachte?",
     answer: "Nee, het vermoeden dat de bestuurder van deze personenauto een strafbaar feit heeft begaan is niet gebaseerd op feiten of omstandigheden",
     variants: [`Ja, hier is sprake van een redelijk vermoeden van schuld aan een strafbaar feit gebaseerd op feiten en/of omstandigheden`, `Nee, het vermoeden dat de bestuurder van deze personenauto een strafbaar feit heeft begaan is niet gebaseerd op feiten of omstandigheden`, `Ja, de vervolging van een strafbaar feit is aangevangen gebaseerd op feiten en/of omstandigheden`, `Nee, ondanks een redelijk vermoeden dat deze bestuurder een strafbaar feit heeft gepleegd is de opsporing van dit strafbare feit nog niet aangevangen`]
+  }, {
+    id: 191,
+    question: "Wat verstaat het Wetboek van Strafvordering onder `inbeslagneming`?",
+    answer: "Het onder zich nemen of gaan houden van enig voorwerp ten behoeve van strafvordering",
+    variants: [`Het onder zich nemen of gaan houden van enig voorwerp dat een staande of aangehouden verdachte met zich voert`, `Het onder zich nemen of gaan houden van enig voorwerp ten behoeve van het onderzoek ter terechtzitting`, `Het onder zich nemen of gaan houden van enig voorwerp dat verbeurd verklaard of onttrokken aan het verkeer kan worden`, `Het onder zich nemen of gaan houden van enig voorwerp ten behoeve van strafvordering`]
+  }, {
+    id: 192,
+    question: "Welke bewering over staande houding is waar?",
+    answer: "Alleen opsporingsambtenaren zijn bevoegd, zowel op als buiten heterdaad, verdachten van elk strafbaar feit staande te houden",
+    variants: [`Alleen opsporingsambtenaren zijn bevoegd, zowel op als buiten heterdaad, verdachten van elk strafbaar feit staande te houden`, `Zowel op als buiten heterdaad is een opsporingsambtenaar bevoegd een ieder staande te houden`, `Buiten heterdaad mogen alleen verdachten, van een feit waarop voorlopige hechtenis is toegelaten, worden staande gehouden`, `In geval van ontdekking op heterdaad is een ieder bevoegd een verdachte staande te houden`]
+  }, {
+    id: 193,
+    question: "Een opsporingsambtenaar ziet twee dagen na een gewapende overval de vluchtauto op straat staan. Mag de opsporingsambtenaar de auto in beslag nemen?",
+    answer: "Ja, het is een misdrijf waar voorlopige hechtenis op staat en dus is de opsporingsambtenaar bevoegd om de auto in beslag te nemen",
+    variants: [`Nee, het is een misdrijf waar voorlopige hechtenis op staat en dus mag alleen een OvJ in beslag nemen`, `Nee, dit mag alleen een HOvJ`, `Ja, maar alleen in opdracht van de HOvJ`, `Ja, het is een misdrijf waar voorlopige hechtenis op staat en dus is de opsporingsambtenaar bevoegd om de auto in beslag te nemen`]
+  }, {
+    id: 194,
+    question: "Op welk moment begint de periode van 6 uur voor onderzoek?",
+    answer: "Op het tijdstip waarop de HOvJ beveelt dat de verdachte daarvoor wordt opgehouden",
+    variants: [`Op het tijdstip waarop de aanhouding wordt verricht`, `Op het tijdstip waarop de HOvJ beveelt dat de verdachte daarvoor wordt opgehouden`, `Op het tijdstip dat het verhoor begint`, `Op het tijdstip van aankomst op de plaats van onderzoek`]
+  }, {
+    id: 195,
+    question: "Om te kunnen spreken van een verdachte volgens strafvordering moet er sprake zijn van.....",
+    answer: "Feiten of omstandigheden en een redelijk vermoeden van een strafbaar feit",
+    variants: [`Feiten en omstandigheden en een redelijk vermoeden van een strafbaar feit`, `Feiten en omstandigheden en ernstige bezwaren van een strafbaar feit`, `Feiten of omstandigheden en een redelijk vermoeden van een strafbaar feit`, `Feiten of omstandigheden en ernstige bezwaren van een strafbaar feit`]
+  }, {
+    id: 196,
+    question: "Welke strafbare feiten mag een buitengewoon opsporingsambtenaar opsporen?",
+    answer: "Alle strafbare feiten die in zijn akte van beëdiging staan vermeld",
+    variants: [`Alle strafbare feiten`, `Alleen strafbare feiten uit bijzondere wetten`, `Alle strafbare feiten die in zijn akte van beëdiging staan vermeld`, `Alle strafbare feiten uit de gemeentelijke verordening`]
+  }, {
+    id: 197,
+    question: "Wat is het verschil tussen een algemeen opsporingsambtenaar en een buitengewoon opsporingsambtenaar?",
+    answer: "Een algemeen opsporingsambtenaar heeft in principe opsporingsbevoegdheid voor alle strafbare feiten, een boa alleen voor de strafbare feiten die in zijn akte van beëdiging vermeld staan",
+    variants: [`Een algemeen opsporingsambtenaar wordt beëdigd en een buitengewoon opsporingsambtenaar niet`, `Een algemeen opsporingsambtenaar krijgt salaris van het Rijk en een boa krijgt salaris van de gemeente`, `Een algemeen opsporingsambtenaar heeft in principe opsporingsbevoegdheid voor alle strafbare feiten, een boa alleen voor de strafbare feiten die in zijn akte van beëdiging vermeld staan`, `Een algemeen opsporingsambtenaar wordt aangesteld door de minister en een buitengewoon opsporingsambtenaar door het Hoofd van dienst`]
   }//{
   //   id: 10,
   //   question: "",
