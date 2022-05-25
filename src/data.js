@@ -166,13 +166,6 @@ export const allData = [
     variants: [`Ja, als hij de OvJ eerst op de hoogte heeft gesteld van dit strafbaar feit`, `Ja, als hij toestemming heeft van een OvJ of een RC`, 
     `Ja, want dit is grondrechtelijk verankerd als persvrijheid`, `Ja, als hij de politie eerst op de hoogte heeft gesteld van dit strafbaar feit`]
   }, {
-    id: 26,
-    question: "Een politieagent gaat overdag naar een woning om een verdachte buiten heterdaad aan te houden. De agent is in het bezit van een machtiging als bedoeld in art. 2 AWBi, afgegeven door een officier van justitie. Na aanbellen wordt opengedaan en de toegang tot de woning wordt hem niet geweigerd.<br>\
-    Is de politieman verplicht een schriftelijk verslag omtrent het binnentreden op te maken?",
-    answer: "Nee, de politieman heeft immers met toestemming de woning betreden",
-    variants: [`Ja, omdat er in de woning dwangmiddelen zijn toegepast`, `Ja, van elk binnentreden in woningen dient een verslag te worden opgemaakt`, 
-    `Nee, een schriftelijk verslag wordt alleen opgemaakt indien er voorwerpen zijn beschadigd door het binnentreden`, `Nee, de politieman heeft immers met toestemming de woning betreden`]
-  }, {
     id: 27,
     question: "Harry en Ahmed besluiten om te gaan inbreken. Samen maken ze een plan en treffen ze voorbereidingen. Ze vragen een andere jongen, Daan, om bij de inbraak de auto te besturen. Ze betalen Daan daarvoor 100 euro. Tijdens de inbraak wacht de chauffeur, Daan, in de auto op een afgesproken plaats. Harry en Ahmed verdelen de buit.    <br>\
     Zijn de jongens strafbaar?",
