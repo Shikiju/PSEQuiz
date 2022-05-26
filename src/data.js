@@ -756,7 +756,7 @@ export const allData = [
     answer: "Nee, want het betreft een overtreding",
     variants: [`Ja, want een winkel is geen bijzondere plaats als bedoeld in de algemene wet op het binnentreden`, 
     `Ja, ter aanhouding op heterdaad mag elke plaats worden betreden`, `Nee, een burger mag niet aanhouden voor een overtreding`, 
-    `Nee, want het betreft een overtreding`]
+    `Nee, een burger mag de winkel niet betreden bij een overtreding`]
   }, {
     id: 117,
     question: "Een man bevindt zich onbevoegd op een terrein waar borden staan met de tekst: ”Verboden toegang voor onbevoegden, artikel 461 Wetboek van Strafrecht”. Een opsporingsambtenaar houdt de man staande en zegt hem proces-verbaal aan. Hij weigert zich te legitimeren.<br>\
@@ -1105,7 +1105,7 @@ export const allData = [
   }, {
     id: 164,
     question: "Strafrecht kunnen wij in Nederland verdelen in?",
-    answer: "Publiekrecht en Privaatrecht",
+    answer: "Formeel en materieel strafrecht",
     variants: [`Wetboek van Strafvordering en Wetboek van Strafrecht`, `Formeel en materieel strafrecht`, `Publiekrecht en Privaatrecht`, `Staats- en Strafrecht`]
   }, {
     id: 165,
@@ -1276,6 +1276,253 @@ export const allData = [
     question: "Wat is het verschil tussen een algemeen opsporingsambtenaar en een buitengewoon opsporingsambtenaar?",
     answer: "Een algemeen opsporingsambtenaar heeft in principe opsporingsbevoegdheid voor alle strafbare feiten, een boa alleen voor de strafbare feiten die in zijn akte van beëdiging vermeld staan",
     variants: [`Een algemeen opsporingsambtenaar wordt beëdigd en een buitengewoon opsporingsambtenaar niet`, `Een algemeen opsporingsambtenaar krijgt salaris van het Rijk en een boa krijgt salaris van de gemeente`, `Een algemeen opsporingsambtenaar heeft in principe opsporingsbevoegdheid voor alle strafbare feiten, een boa alleen voor de strafbare feiten die in zijn akte van beëdiging vermeld staan`, `Een algemeen opsporingsambtenaar wordt aangesteld door de minister en een buitengewoon opsporingsambtenaar door het Hoofd van dienst`]
+  }, {
+    id: 198,
+    question: "Wie wordt in de Politiewet 2012 genoemd als degene die het gezag heeft over de politie bij strafrechtelijke handhaving van de rechtsorde?",
+    answer: "De officier van justitie",
+    variants: [`De burgemeester`, `De minister van Veiligheid en Justitie`, `De korpschef van de Nationale Politie`, `De officier van justitie`]
+  }, {
+    id: 199,
+    question: "De politie is aanwezig om een demonstratie in goede banen te leiden. Wannneer er vernielingen worden aangericht, treedt ze op tegen de verdachten. Demonstranten die in de verdrukking komen en daardoor ademhalingsproblemen krijgen, worden door de politie ontzet en naar een EHBO-post gebracht. <br>\
+    De politie is hier bezig met haar taak om:",
+    answer: "Strafbare feiten op te sporen, de openbare orde te handhaven en hulp te verlenen aan hen die dit behoeven",
+    variants: [`De rechtsorde te handhaven`, `De openbare orde te handhaven`, `De openbare orde te handhaven en hulp te verlenen aan hen die dit behoeven`, `Strafbare feiten op te sporen, de openbare orde te handhaven en hulp te verlenen aan hen die dit behoeven`]
+  }, {
+    id: 200,
+    question: "U wilt een woning betreden om daar een voorwerp in beslag te nemen van de zoon des huizes, die verdachte is. U heeft geen machtiging tot binnentreden. Van de bewoners willen de man en de zoon u toelaten. De vrouw des huizes weigert u de toegang. Wat doet u?",
+    answer: "Ik ga niet naar binnen, omdat de weigering van de vrouw beslissend is",
+    variants: [`Ik ga naar binnen, omdat ik van niemand toestemming nodig heb`, `Ik ga naar binnen, omdat de toestemming van de man beslissend is`, `Ik ga niet naar binnen, omdat de weigering van de vrouw beslissend is`, `Ik ga naar binnen omdat de toestemming van de verdachte beslissend is`]
+  }, {
+    id: 201,
+    question: "Een buitengewoon opsporingsambtenaar ziet dat een verdachte een overtreding pleegt. Hij is bevoegd deze overtreding op te sporen. Hij loopt de verdachte achterna en ziet dat de verdachte een kerkgebouw binnengaat, waar op dat moment een mis gehouden wordt. Is de buitengewoon opsporingsambtenaar bevoegd de kerk te betreden om de verdachte aan te houden?",
+    answer: "Ja, het betreft een strafbaar feit dat op heterdaad ontdekt is",
+    variants: [`Ja, als hij in het bezit is van een schriftelijke machtiging tot binnentreden`, `Ja, het betreft een strafbaar feit dat op heterdaad ontdekt is`, `Nee, het mag alleen bij een misdrijf dat op heterdaad ontdekt is`, `Nee, kerkgebouwen mogen niet worden betreden`]
+  }, {
+    id: 202,
+    question: "Een politierechter heeft een verdachte veroordeeld voor winkeldiefstal. Bij welke gerechtelijke instantie kan deze verdachte in hoger beroep gaan?",
+    answer: "Gerechtshof",
+    variants: [`Kantonrechter`, `Meervoudige kamer van de rechtbank`, `Gerechtshof`, `Hoge Raad`]
+  }, {
+    id: 203,
+    question: "Het voorbereidend onderzoek is een onderzoek dat voorafgaat aan .....",
+    answer: "De behandeling ter terechtzitting",
+    variants: [`De aanhouding van de verdachte`, `De behandeling ter terechtzitting`, `De inverzekeringstelling van de verdachte`, `Het opsporingsonderzoek`]
+  }, {
+    id: 204,
+    question: "Wat wordt in het Wetboek van Strafvordering verstaan onder het opportuniteitsbeginsel?",
+    answer: "Om redenen aan het algemeen belang ontleend wordt van vervolging afgezien",
+    variants: [`Er wordt niet vervolgd als daardoor de verdachte teveel nadeel onder vindt`, `Er wordt niet vervolgd, omdat de verdachte voor de eerste keer een strafbaar feit pleegde`, `Het strafbare feit is niet ernstig genoeg om te vervolgen`, `Om redenen aan het algemeen belang ontleend wordt van vervolging afgezien`]
+  }, {
+    id: 205,
+    question: "Wie behoort niet tot de rechterlijke macht?",
+    answer: "Minister van Justitie",
+    variants: [`Minister van Justitie`, `Griffier`, `President van de Hoge Raad`, `Advocaat-generaal bij het gerechtshof`]
+  }, {
+    id: 206,
+    question: "Welke van de onderstaande stellingen is of zijn juist? <br>\
+    I. Misdrijven worden in principe berecht door het gerechtshof.<br>\
+    II. Overtredingen worden in principe berecht door de kantonrechter.",
+    answer: "Alleen II",
+    variants: [`Beide`, `Alleen I`, `Alleen II`, `Geen van beide`]
+  }, {
+    id: 207,
+    question: "Welke van de onderstaande stellingen is of zijn juist? <br>\
+    I. Misdrijven worden in principe berecht door het gerechtshof<br>\
+    II. Overtredingen worden in principe berecht door de kantonrechter",
+    answer: "Alleen II",
+    variants: [`Beide`, `Alleen I`, `Alleen II`, `Geen van beide`]
+  }, {
+    id: 208,
+    question: "Welke van de onderstaande stellingen is of zijn juist?<br>\
+    I. Eigendom is het meest omvattende recht op een zaak<br>\
+    II. Een bezitter hoeft geen eigenaar te zijn",
+    answer: "Beide",
+    variants: [`Beide`, `Alleen I`, `Alleen II`, `Geen van beide`]
+  }, {
+    id: 209,
+    question: "De verklaring van de verdachte wordt zoveel mogelijk in het proces-verbaal opgenomen in ........",
+    answer: "Zijn eigen woorden",
+    variants: [`Algemeen beschaafd Nederlands`, `Ambtelijke taal`, `Zijn eigen taal`, `Zijn eigen woorden`]
+  }, {
+    id: 210,
+    question: "Welke van de onderstaande stellingen is of zijn juist?<br>\
+    I. Eigendom is het meest omvattende recht op een zaak<br>\
+    II. Een bezitter hoeft geen eigenaar te zijn",
+    answer: "Beide",
+    variants: [`Beide`, `Alleen I`, `Alleen II`, `Geen van beide`]
+  }, {
+    id: 211,
+    question: "Wat wordt verstaan onder het subsidiariteitsbeginsel?",
+    answer: "De opsporingsambtenaar moet zijn doel op de minst ingrijpende manier voor de burger zien te bereiken",
+    variants: [`De bevoegdheid die de opsporingsambtenaar uitoefent, moet in verhouding staan tot het doel dat hij wil bereiken`, `De manier waarop de opsporingsambtenaar zijn bevoegdheden aan wendt, moet voldoen aan de beginselen van behoorlijk bestuur`, `De opsporingsambtenaar mag op grond van dit beginsel geen geweld aanwenden om zijn doel te bereiken`, `De opsporingsambtenaar moet zijn doel op de minst ingrijpende manier voor de burger zien te bereiken`]
+  }, {
+    id: 212,
+    question: "In welke wet is de relatieve competentie van de rechter geregeld?",
+    answer: "Wetboek van Strafvordering",
+    variants: [`Wet op de Rechterlijke Organisatie`, `Wetboek van Strafvordering`, `Wetboek van Burgerlijke rechtsvordering`, `Wetboek van Strafrecht`]
+  }, {
+    id: 213,
+    question: "Het Gerechtshof behandelt alleen:",
+    answer: "Hoger-beroepzaken van rechtbanken en zaken die terugverwezen zijn door de Hoge Raad",
+    variants: [`Hoger-beroepzaken van rechtbanken en zaken die terugverwezen zijn door de Hoge Raad`, `Alle misdrijven waarbij dodelijke slachtoffers zijn te betreuren`, `Alle misdrijven uit het Wetboek van Strafrecht`, `Ambtsmisdrijven gepleegd door Ministers, Staatssecretarissen en Parlementsleden`]
+  }, {
+    id: 214,
+    question: "Wie kan hoger beroep aantekenen tegen de uitspraak van de rechter?",
+    answer: "De officier van justitie en de verdachte",
+    variants: [`Het slachtoffer`, `De officier van justitie en de verdachte`, `Alleen de verdachte`, `Alleen de officier van justitie`]
+  }, {
+    id: 215,
+    question: "Het aanhouden buiten heterdaad van een verdachte van een misdrijf mag onder bepaalde voorwaarden ook door een opsporingsambtenaar die geen hulpofficier van justitie is. Eén van de voorwaarden is dat ..............",
+    answer: "Het optreden van de (hulp)officier van justitie niet kan worden afgewacht",
+    variants: [`De verdachte na de aanhouding onverwijld naar een plaats van verhoor wordt overgebracht`, `Er een redelijk vermoeden bestaat dat de verdachte opnieuw een
+    misdrijf zal plegen`, `Er ernstige bezwaren tegen de verdachte bestaan`, `Het optreden van de (hulp)officier van justitie niet kan worden afgewacht`]
+  }, {
+    id: 216,
+    question: "Wie is of zijn bevoegd een verdachte in verzekering te stellen?",
+    answer: "Officier van justitie en hulpofficier van justitie",
+    variants: [`Opsporingsambtenaren vanaf salarisschaal 9`, `Officier van justitie en hulpofficier van justitie`, `Officier van justitie en rechter-commissaris`, `Rechter-commissaris`]
+  }, {
+    id: 217,
+    question: "Wie mogen in geval van ontdekking op heterdaad de voor inbeslagneming vatbare voorwerpen in beslag nemen en daartoe elke plaats betreden?",
+    answer: "Alle opsporingsambtenaren",
+    variants: [`Alle opsporingsambtenaren`, `Uitsluitend de officier van justitie en de hulpofficier van justitie`, `Uitsluitend de algemeen opsporingsambtenaren`, `Zowel burgers als opsporingsambtenaren`]
+  }, {
+    id: 218,
+    question: "Aan een politiebureau wordt een brief van een advocaat bezorgd. Deze is bestemd voor een in dat bureau ingesloten verdachte. <br>\
+    Wat geldt voor deze brief?",
+    answer: "De brief moet gesloten en ongelezen aan de verdachte worden overhandigd",
+    variants: [`De brief moet gesloten en ongelezen aan de verdachte worden overhandigd`, `De officier van justitie moet toestemming geven om de brief aan de verdachte te geven`, `De verdachte krijgt de brief niet`, `De verdachte krijgt de brief zodra de hulpofficier van justitie de brief heeft gelezen`]
+  }, {
+    id: 219,
+    question: "Welke bewering met betrekking tot het `geval van ontdekking op heterdaad` is juist?",
+    answer: "Het wordt niet langer aanwezig geacht dan kort na de ontdekking",
+    variants: [`Het eindigt nadat 6 uur is verstreken sinds de ontdekking op heterdaad`, `Het eist dat de ontdekking plaatsvindt op het moment dat het strafbare feit wordt begaan`, `Het eist dat het strafbare feit ontdekt wordt door een opsporingsambtenaar`, `Het wordt niet langer aanwezig geacht dan kort na de ontdekking`]
+  }, {
+    id: 220,
+    question: "Indien een aanhouding van een verdachte is geschied door een burger, dan ......",
+    answer: "Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar",
+    variants: [`Dient deze te handelen overeenkomstig de verplichtingen, die een opsporingsambtenaar heeft bij een aanhouding`, `Draagt deze zorg dat de aangehoudene ten spoedigste voor de officier van justitie of hulpofficier van justitie wordt geleid`, `Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar`, `Wordt deze als getuige gehoord door een opsporingsambtenaar`]
+  }, {
+    id: 221,
+    question: "Indien een aanhouding van een verdachte is geschied door een burger, dan ......",
+    answer: "Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar",
+    variants: [`Dient deze te handelen overeenkomstig de verplichtingen, die een opsporingsambtenaar heeft bij een aanhouding`, `Draagt deze zorg dat de aangehoudene ten spoedigste voor de officier van justitie of hulpofficier van justitie wordt geleid`, `Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar`, `Wordt deze als getuige gehoord door een opsporingsambtenaar`]
+  }, {
+    id: 222,
+    question: "Levert het proces-verbaal op zichzelf voldoende wettelijk bewijs op?",
+    answer: "Ja, indien de rechter de overtuiging heeft dat verdachte het tenlastegelegde feit heeft gepleegd",
+    variants: [`Ja, indien de rechter de overtuiging heeft dat verdachte het tenlastegelegde feit heeft gepleegd`, `Ja, een op ambtseed opgemaakt proces-verbaal levert altijd voldoende wettig en overtuigend bewijs op`, `Nee, een proces-verbaal zal ondersteund moeten worden door een getuigenverklaring om voldoende wettig en overtuigend bewijs te hebben`]
+  }, {
+    id: 223,
+    question: "Een BOA betreedt een vrijstaande schuur om een verdachte aan te houden die hij zojuist betrapte op een diefstal. De eigenaar van deze schuur doet later aangifte van huisvredebreuk (artikel 138 Wetboek van Strafrecht) door de BOA omdat deze zonder toestemming de schuur heeft betreden. Op welke strafuitsluitingsgrond uit het Wetboek van Strafrecht kan de BOA zich beroepen?",
+    answer: "Deze BOA kan zich beroepen op een wettelijk voorschrift",
+    variants: [`Deze BOA kan zich beroepen op overmacht`, `Er is geen sprake van huisvredebreuk omdat er slechts een vrijstaande schuur werd betreden`, `Deze BOA kan zich beroepen op een wettelijk voorschrift`]
+  }, {
+    id: 224,
+    question: "Een agent heeft opdracht van de officier van justitie om een bepaalde verdachte buiten heterdaad aan te houden. De agent ziet de verdachte lopen op straat en hij ziet dat deze verdachte een disco binnengaat. De portier weigert de toegang aan de agent. Is de agent bevoegd om tegen de wil van de portier de disco te betreden?",
+    answer: "Ja",
+    variants: [`Ja`, `Nee`, `Ja, indien hij een schriftelijke machtiging tot binnentreden heeft`]
+  }, {
+    id: 225,
+    question: "Welk gerecht is bevoegd om het hoger beroep van een APV-overtreding te berechten?",
+    answer: "De enkelvoudige kamer van het gerechtshof",
+    variants: [`De politierechter op de arrondissementsrechtbank`, `De meervoudige kamer van de rechtbank`, `De enkelvoudige kamer van het gerechtshof`]
+  }, {
+    id: 226,
+    question: "Een verdachte wordt staande gehouden door een BOA die hem zojuist een overtreding zag plegen. De BOA deelt de verdachte mee van welk feit hij hem verdenkt en vraagt de verdachte vervolgens naar zijn identiteitsgegevens. De verdachte weigert zijn identiteitsgegevens op te geven aan de BOA. Mag de verdachte dit weigeren?",
+    answer: "Ja, de verdachte mag straffeloos weigeren zijn identiteitsgegevens op te geven",
+    variants: [`Ja, want de cautie was nog niet gegeven`, `Ja, de verdachte mag straffeloos weigeren zijn identiteitsgegevens op te geven`, `Nee, verdachte is nu strafbaar voor het niet opgeven van zijn identiteitsgegevens`]
+  }, {
+    id: 227,
+    question: "Moet de officier van justitie elk strafbaar feit vervolgen?",
+    answer: "Nee, hij kan op gronden van algemeen belang afzien van vervolging",
+    variants: [`Nee, hij kan op gronden van algemeen belang afzien van vervolging`, `Ja, volgens het legaliteitsbeginsel is hij verplicht elk strafbaar feit te vervolgen`, `Ja, op grond van het opportuniteitsbeginsel is hij verplicht elke haalbare zaak te vervolgen`]
+  }, {
+    id: 228,
+    question: "Een man is vanuit Nederland naar Turkije vertrokken met zijn 4 jarig kind. De ex-vrouw in Nederland heeft niet het wettelijk gezag over dat kind. Zij vraagt een vriend van haar om het kind in Turkije te ontvoeren en naar Nederland te brengen. De vrouw biedt de vriend daar 10.000 euro voor. De vriend ontvoert het kind. Op welke wijze hebben de vrouw en de vriend deelgenomen aan dit strafbare feit?",
+    answer: "De vrouw is uitlokker en de vriend is pleger",
+    variants: [`De vrouw is doen pleger en de man is de pleger`, `De vrouw en de vriend zijn medeplegers`, `De vrouw is uitlokker en de vriend is pleger`]
+  }, {
+    id: 229,
+    question: "Wolbrink is rechercheur bij de rijksrecherche. Tot welke categorie ambtenaren behoort hij?",
+    answer: "Hij is politieambtenaar van de rijksrecherche, aangesteld voor de uitvoering van de politietaak",
+    variants: [`Hij is politieambtenaar van de rijksrecherche, aangesteld voor de uitvoering van de politietaak`, `Hij is bijzonder ambtenaar van politie de rijksrecherche`, `Hij is ambtenaar van politie aangesteld bij de landelijke eenheid van politie, de rijksrecherche`]
+  }, {
+    id: 230,
+    question: "Een verdachte heeft een strafbaar feit gepleegd dat strafbaar is gesteld in het Wetboek van Strafrecht en in een bijzondere wet. Welke strafbepaling moet de rechter toepassen bij de berechting van dit feit?",
+    answer: "De strafbepaling uit de bijzondere wet",
+    variants: [`Die strafbepaling waarop de hoogste hoofdstraf is gesteld`, `De strafbepaling uit de bijzondere wet`, `De strafbepaling uit het Wetboek van Strafrecht`]
+  }, {
+    id: 231,
+    question: "Welke strafbare feiten worden berecht door de politierechter en wat is de maximale straf die de officier van justitie mag eisen?",
+    answer: "Misdrijven die eenvoudig te bewijzen zijn en de maximaal te eisen straf is één jaar",
+    variants: [`Misdrijven die eenvoudig te bewijzen zijn en de maximaal te eisen straf is één jaar`, `Misdrijven die eenvoudig te bewijzen zijn en de maximaal te eisen straf is 6 maanden`, `Misdrijven en overtredingen die eenvoudig te bewijzen zijn en de maximaal te eisen straf is één jaar`]
+  }, {
+    id: 232,
+    question: "Is het Openbaar Ministerie verplicht om gedurende het voorbereidend onderzoek kennisneming van alle processtukken toe te staan aan de verdachte?",
+    answer: "Nee, bepaalde stukken mogen hem tijdelijk worden onthouden",
+    variants: [`Nee, bepaalde stukken mogen hem tijdelijk worden onthouden`, `Nee, tijdens het voorbereidend onderzoek heeft verdachte geen recht op kennisneming van 
+    de processtukken`, `Ja, verdachte heeft namelijk recht op alle processtukken omdat hij zich moet kunnen verdedigen tegen de beschuldiging`]
+  }, {
+    id: 233,
+    question: "Een klant ziet in een winkel dat een man daar een diefstal pleegt. De man loopt naar buiten en de klant vertelt aan de beveiliger in de winkel wat zij zojuist zag. De beveiliger loopt daarop de man meteen achterna de winkel uit. Waartoe is de beveiliger in dit geval volgens het Wetboek van Strafvordering bevoegd?",
+    answer: "Aanhouden en onverwijld overdragen aan een opsporingsambtenaar onder afgifte van bij de verdachte aangetroffen voorwerpen",
+    variants: [`Staande houden en de politie onverwijld in kennis stellen`, `Aanhouden, de gestolen goederen in beslag nemen en onverwijld overdragen aan een 
+    opsporingsambtenaar`, `Aanhouden en onverwijld overdragen aan een opsporingsambtenaar onder afgifte van bij de verdachte aangetroffen voorwerpen`]
+  }, {
+    id: 234,
+    question: "Bewust onwaarheden vermelden in een proces-verbaal levert op?",
+    answer: "Valsheid in geschrift en meineed",
+    variants: [`Valsheid in geschrift en schenden van de ambtsplicht`, `Meineed en schending van de bijzondere ambtsplicht`, `Valsheid in geschrift en meineed`]
+  }, {
+    id: 235,
+    question: "Op een feestje praat Piet over een goede mogelijkheid om de belasting te ontduiken. Jan hoort dit gesprek bij toeval en Jan gebruikt deze kennis en ontduikt vervolgens de belasting. Is er op Piet een strafbare deelneming van toepassing?",
+    answer: "Piet gaat vrijuit omdat hij niet de opzet had om Jan uit te lokken",
+    variants: [`Ja, Piet is de uitlokker`, `Piet is strafbaar als medeplichtige`, `Piet gaat vrijuit omdat hij niet de opzet had om Jan uit te lokken`]
+  }, {
+    id: 236,
+    question: "Een agent houdt een verdachte aan die zich verzet tegen deze aanhouding. De agent vraagt een burger om hem te assisteren. De verdachte geeft deze burger daarbij een krachtige vuistslag op zijn kaak. Werd er wederspannigheid gepleegd tegen deze burger?",
+    answer: "Ja, in dit geval is er sprake van wederspannigheid tegen een burger omdat deze de agent op verzoek behulpzaam was",
+    variants: [`Ja, verzet door geweld tegen een persoon die een aanhouding verricht levert altijd wederspannigheid op`, `Ja, in dit geval is er sprake van wederspannigheid tegen een burger omdat deze de agent op verzoek behulpzaam was`, `Nee, wederspannigheid kan alleen gepleegd worden tegen een opsporingsambtenaar die werkzaam is in de rechtmatige uitoefening van zijn bediening`]
+  }, {
+    id: 237,
+    question: "Een burger houdt op heterdaad een verdachte aan. Twee agenten komen even later ter plaatse. Wat moeten deze agenten doen?",
+    answer: "De verdachte ten spoedigste voorgeleiden bij de hulpofficier van justitie",
+    variants: [`De verdachte zo spoedig mogelijk overbrengen naar een plaats van verhoor`, `De verdachte de cautie geven en kort horen over het feit`, `De verdachte ten spoedigste voorgeleiden bij de hulpofficier van justitie`]
+  }, {
+    id: 238,
+    question: "Een man is te gast in een café en hij misdraagt zich. De uitbater vordert de man dat hij de zaak meteen moet verlaten. De zich misdragende gast doet dat niet en blijft aan de bar zitten. Is deze man nu strafbaar voor huisvredebreuk?",
+    answer: "Nee, in deze situatie moet de man na een tweede vordering weigeren het café te verlaten om strafbaar te zijn voor dit feit",
+    variants: [`Nee, in deze situatie moet de man na een tweede vordering weigeren het café te verlaten om strafbaar te zijn voor dit feit`, `Nee, het artikel huisvredebreuk is in deze situatie niet van toepassing, huisvredebreuk is alleen strafbaar als het in een woning wordt gepleegd`, `Ja, de man misdraagt zich en als hij niet op eerste vordering het café verlaat is hij strafbaar voor dit feit`]
+  }, {
+    id: 239,
+    question: "Hieronder worden vier functionarissen genoemd. Wie is/zijn bevoegd om foto’s en vingerafdrukken te (laten) nemen ter vaststelling van de identiteit van de aangehouden verdachte van een feit waarop geen voorlopige hechtenis mogelijk is? <br>\
+    1. Rechter-commissaris<br>\
+    2. Officier van justitie<br>\
+    3. Hulpofficier van justitie<br>\
+    4. Agent van politie die geen hulpofficier van justitie is",
+    answer: "Alleen 2 en 3, en alleen als er twijfel over de identiteit bestaat",
+    variants: [`Alleen 1 en 2`, `Alleen 2 en 3, en alleen als er twijfel over de identiteit bestaat`, `Alleen 2, 3 en 4 en alleen als er twijfel over de identiteit bestaat`]
+  }, {
+    id: 240,
+    question: "Bij wie wordt een inbeslaggenomen voorwerp ondergebracht als het nog niet wordt teruggegeven?",
+    answer: "Bij een aangewezen bewaarder",
+    variants: [`Bij de politie`, `Bij het openbaar ministerie`, `Bij een aangewezen bewaarder`]
+  }, {
+    id: 241,
+    question: "Een man is van plan folders uit te delen op een spoorwegstation. Daar folders uitdelen is een overtreding uit het Besluit personenvervoer. Hij wil net beginnen met het uitdelen en hij haalt wat folders uit zijn zak. Vlak voordat hij op het station de eerste folder uitdeelt, ziet hij twee agenten aankomen. Omdat hij niet bekeurd wil worden steekt hij de folders weer snel in zijn zak. Is dit een strafbare poging?",
+    answer: "Nee, in principe is een poging tot een overtreding niet strafbaar",
+    variants: [`Nee, hij is niet begonnen met de uitvoering van dit strafbare feit`, `Nee, in principe is een poging tot een overtreding niet strafbaar`, `Ja, er is een begin gemaakt met de uitvoering van dit strafbare feit en de terugtrekking was niet vrijwillig`]
+  }, {
+    id: 242,
+    question: "Is de hulpofficier van justitie bevoegd om een aangehouden verdachte aan zijn lichaam te laten onderzoeken om bewijsmateriaal te verzamelen?",
+    answer: "Ja, als er ernstige bezwaren zijn tegen deze verdachte",
+    variants: [`Ja, als er sprake is van ernstig en onmiddellijk gevaar voor de verdachte of zijn omgeving`, `Ja, als er ernstige bezwaren zijn tegen deze verdachte`, `Nee, deze bevoegdheid is voorbehouden aan de officier van justitie`]
+  }, {
+    id: 243,
+    question: "Wie heeft het gezag over de politie in het kader van de openbare orde?",
+    answer: "De burgemeester",
+    variants: [`De officier van justitie`, `De gemeenteraad`, `De burgemeester`]
   }//{
   //   id: 10,
   //   question: "",
