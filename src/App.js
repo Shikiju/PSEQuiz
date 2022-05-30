@@ -51,7 +51,7 @@ export default function App() {
 
     let deeplinkData = null;
     if(deeplink !== null) {
-      const deepLinkResult = filteredAllData.find( ({id}) => id === parseInt(deeplink));
+      const deepLinkResult = allData.find( ({id}) => id === parseInt(deeplink));
       deeplinkData = deepLinkResult;
     }
     let loadedData = [];
