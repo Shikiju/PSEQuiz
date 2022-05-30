@@ -1,6 +1,6 @@
 {
   "name": "psi-quiz-app",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
