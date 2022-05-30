@@ -751,12 +751,9 @@ export const allData = [
     `Nee, de politieagent heeft een machtiging en dan hoeft hij zijn doel niet mee te delen`]
   }, {
     id: 116,
-    question: "Een man laat zijn hond poepen op de stoep voor een woning. De eigenaar van die woning wil deze man als verdachte van deze overtreding uit de APV op heterdaad    aanhouden. De man met de hond rent een winkel binnen om aan de aanhouding te ontsnappen.<br>\
-    Mag de eigenaar van de woning de winkel betreden ter aanhouding? (antwoord onzeker?)",
-    answer: "Nee, want het betreft een overtreding",
-    variants: [`Ja, want een winkel is geen bijzondere plaats als bedoeld in de algemene wet op het binnentreden`, 
-    `Ja, ter aanhouding op heterdaad mag elke plaats worden betreden`, `Nee, een burger mag niet aanhouden voor een overtreding`, 
-    `Nee, een burger mag de winkel niet betreden bij een overtreding`]
+    question: "Hoe heet de afdeling van het Openbaar Ministerie bij het Gerechtshof?",
+    answer: "Ressortsparket",
+    variants: [`Advocaat-generaal`, `Parket`, `Parket-generaal`, `Ressortsparket`]
   }, {
     id: 117,
     question: "Een man bevindt zich onbevoegd op een terrein waar borden staan met de tekst: ”Verboden toegang voor onbevoegden, artikel 461 Wetboek van Strafrecht”. Een opsporingsambtenaar houdt de man staande en zegt hem proces-verbaal aan. Hij weigert zich te legitimeren.<br>\
