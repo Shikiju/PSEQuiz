@@ -14,6 +14,7 @@ export default function App() {
   const [correctPassword, setCorrectPassword] = useState(false);
   const [totalQuestionCount, setTotalQuestionCount] = useState(0);
   const [totalSkippedQuestionCount, setTotalSkippedQuestionCount] = useState(0);
+  const [correctlyAnsweredQuestions, setCorrectlyAnsweredQuestions] = useState([]);
   
   useEffect(() => {
     console.log(`Initial load`);
@@ -74,7 +75,12 @@ export default function App() {
 
   const checkCorrectAnswer = () => {
     if (myAnswer === data[currentQuestionIndex].answer) {
-      setScore(score + 1);
+      if(!correctlyAnsweredQuestions.includes(data[currentQuestionIndex].id)) {
+        setScore(score + 1);
+        let mutatedCorrectlyAnsweredQuestions = [...correctlyAnsweredQuestions];
+        mutatedCorrectlyAnsweredQuestions.push(data[currentQuestionIndex].id);
+        setCorrectlyAnsweredQuestions(mutatedCorrectlyAnsweredQuestions);
+      }
     }
   };
 
