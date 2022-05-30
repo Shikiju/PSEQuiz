@@ -1214,8 +1214,7 @@ export const allData = [
     id: 185,
     question: "Fred krijgt van Johan twee klappen in het gezicht en een stomp in zijn maag. Twee dagen later ziet Fred op straat Johan aankomen. Nog voor Johan iets gezegd heeft slaat Fred hem met een ijzeren staaf op zijn hoofd. Is er sprake van noodweerexces?",
     answer: "Nee, er is geen sprake van een ogenblikkelijke wederrechtelijke aanranding",
-    variants: [`Ja, Fred mag verwachten dat Johan hem weer komt slaan en schoppen`, `Ja, het is proportioneel om dit te doen`, `Nee, er is geen sprake van een ogenblikkelijke 
-    wederrechtelijke aanranding`, `Nee, tenzij de eerste mishandeling nog op heterdaad is`]
+    variants: [`Ja, Fred mag verwachten dat Johan hem weer komt slaan en schoppen`, `Ja, het is proportioneel om dit te doen`, `Nee, er is geen sprake van een ogenblikkelijke wederrechtelijke aanranding`, `Nee, tenzij de eerste mishandeling nog op heterdaad is`]
   }, {
     id: 186,
     question: "Het materieel strafrecht.....",
