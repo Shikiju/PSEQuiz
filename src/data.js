@@ -1403,11 +1403,6 @@ export const allData = [
     answer: "Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar",
     variants: [`Dient deze te handelen overeenkomstig de verplichtingen, die een opsporingsambtenaar heeft bij een aanhouding`, `Draagt deze zorg dat de aangehoudene ten spoedigste voor de officier van justitie of hulpofficier van justitie wordt geleid`, `Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar`, `Wordt deze als getuige gehoord door een opsporingsambtenaar`]
   }, {
-    id: 221,
-    question: "Indien een aanhouding van een verdachte is geschied door een burger, dan ......",
-    answer: "Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar",
-    variants: [`Dient deze te handelen overeenkomstig de verplichtingen, die een opsporingsambtenaar heeft bij een aanhouding`, `Draagt deze zorg dat de aangehoudene ten spoedigste voor de officier van justitie of hulpofficier van justitie wordt geleid`, `Levert deze de aangehoudene onverwijld over aan een opsporingsambtenaar`, `Wordt deze als getuige gehoord door een opsporingsambtenaar`]
-  }, {
     id: 222,
     question: "Levert het proces-verbaal op zichzelf voldoende wettelijk bewijs op?",
     answer: "Ja, indien de rechter de overtuiging heeft dat verdachte het tenlastegelegde feit heeft gepleegd",
@@ -1523,6 +1518,111 @@ export const allData = [
     question: "Wie heeft het gezag over de politie in het kader van de openbare orde?",
     answer: "De burgemeester",
     variants: [`De officier van justitie`, `De gemeenteraad`, `De burgemeester`]
+  }, {
+    id: 244,
+    question: "Een agent en een burger constateren beiden een misdrijf. De verdachte vlucht te voet en verdwijnt in zijn woning. De agent en de burger staan nu voor de open deur van de woning. De agent is niet in het bezit van een schriftelijke machtiging. Mogen de agent en de burger de woning betreden ter aanhouding van de verdachte?",
+    answer: "Agent nee, burger nee",
+    variants: [`Agent nee, burger nee`, `Agent ja, burger nee`, `Agent ja, burger ja`]
+  }, {
+    id: 245,
+    question: "De koning is onschendbaar. Wat is waar in relatie tot deze stelling?",
+    answer: "De minister is politiek verantwoordelijk voor het optreden van de koning",
+    variants: [`De koning behoort niet tot de regering en is daarom politiek onschendbaar`, `De minister moet verantwoording afleggen aan de koning`, `De minister is politiek verantwoordelijk voor het optreden van de koning`]
+  }, {
+    id: 246,
+    question: "Wat is juist?",
+    answer: "Medeplegen van een overtreding is strafbaar, medeplichtigheid aan een overtreding is niet strafbaar",
+    variants: [`Bij medeplegen moet opzet bewezen worden, bij medeplichtigheid hoeft dat niet`, `Bij medeplichtigheid moet opzet bewezen worden, bij medeplegen hoeft dat niet`, `Medeplegen van een overtreding is strafbaar, medeplichtigheid aan een overtreding is niet strafbaar`]
+  }, {
+    id: 247,
+    question: "Wat is de cautie?",
+    answer: "De mededeling aan de verdachte dat hij het heeft recht te zwijgen bij een verhoor",
+    variants: [`Het begin van het verhoor`, `Het recht een verklaring af te mogen leggen`, `De mededeling aan de verdachte dat hij het heeft recht te zwijgen bij een verhoor`]
+  }, {
+    id: 248,
+    question: "Wat is juist met betrekking tot het schriftelijk verslag van het binnentreden in een woning?",
+    answer: "Dit verslag wordt opgemaakt op ambtseed of ambtsbelofte",
+    variants: [`Dit verslag wordt opgemaakt op ambtseed of ambtsbelofte`, `Dit verslag wordt ondertekend door de bewoner en de ambtenaar die de woning betrad`, `Dit verslag wordt aan de bewoner ter beschikking gesteld door het OM, als de bewoner daarom verzoekt`]
+  }, {
+    id: 249,
+    question: "Wat is een raadsheer op het gerechtshof?",
+    answer: "Een advocaat die de verdachte verdedigt en van advies voorziet",
+    variants: [`De vertegenwoordiger van het Openbaar Ministerie op dit gerecht`, `Een advocaat die de verdachte verdedigt en van advies voorziet`, `Een rechter die rechtspreekt op dit gerecht`]
+  }, {
+    id: 250,
+    question: "Henk vraagt aan Wim een boek te leen. Wim leent dit boek uit aan Henk. Wat is de vermogensrechtelijke betrekking tussen Henk en het boek?",
+    answer: "Henk is de houder van dit boek",
+    variants: [`Henk is de tijdelijke eigenaar van dit boek`, `Henk is de bewaarder van dit boek`, `Henk is de houder van dit boek`]
+  }, {
+    id: 251,
+    question: "Is medeplichtigheid aan een overtreding in het algemeen strafbaar?",
+    answer: "Nee, in principe is alleen medeplichtigheid aan een misdrijf strafbaar",
+    variants: [`Nee, in principe is alleen medeplichtigheid aan een misdrijf strafbaar`, `Nee, medeplichtigheid aan een overtreding is uitgesloten`, `Ja, maar de straf bij medeplichtigheid aan een overtreding wordt met 1/3 verminderd`]
+  }, {
+    id: 252,
+    question: "Een man wordt betrapt terwijl hij glaswerk vernielt in een winkel. De rechter oordeelt dat hij niet toerekeningsvatbaar is voor dit handelen. Wat is waar?",
+    answer: "De schuld ontbreekt",
+    variants: [`De schuld ontbreekt`, `De wederrechtelijkheid ontbreekt`, `Het feit is daardoor niet strafbaar`]
+  }, {
+    id: 253,
+    question: "Is de officier van justitie bevoegd te bevelen dat een proces-verbaal van eigen verhoor wordt onthouden aan de verdachte?",
+    answer: "Nee, het Wetboek van Strafvordering staat dat niet toe",
+    variants: [`Nee, de rechter-commissaris is daartoe wel bevoegd`, `Nee, het Wetboek van Strafvordering staat dat niet toe`, `Ja, aan de verdachte mogen namelijk bepaalde stukken worden onthouden`]
+  }, {
+    id: 254,
+    question: "Wie benoemt de wethouders?",
+    answer: "De gemeenteraad",
+    variants: [`De burgemeester`, `Het college`, `De gemeenteraad`]
+  }, {
+    id: 255,
+    question: "Strafvordering heeft alleen plaats op de wijze bij de wet voorzien. Dit staat in artikel 1 van het Wetboek van Strafvordering. Wat betekent dit?",
+    answer: "Opsporingsbevoegdheden mogen alleen in een wet in formele zin worden vastgesteld",
+    variants: [`Opsporingsbevoegdheden mogen alleen in een wet in formele zin worden vastgesteld`, `Strafvordering mag alleen plaatsvinden na gedrag dat strafbaar is gesteld in een wet`, `Strafvordering wordt vastgesteld in een wet of ander wettelijk voorschrift`]
+  }, {
+    id: 256,
+    question: "Wie geeft bevel tot bewaring van de verdachte?",
+    answer: "De rechter-commissaris",
+    variants: [`De officier van justitie`, `De zittingsrechter`, `De rechter-commissaris`]
+  }, {
+    id: 257,
+    question: "Tot op welk moment kan een strafzaak geseponeerd worden?",
+    answer: "Tot het moment dat het onderzoek ter terechtzitting is aangevangen",
+    variants: [`Tot het moment dat het onderzoek ter terechtzitting is aangevangen`, `Tot het moment dat de verdachte de dagvaarding heeft ontvangen`, `Tot het moment dat vervolging is aangevangen`]
+  }, {
+    id: 258,
+    question: "Wat is juist met betrekking tot de Provinciewet?",
+    answer: "Een lid van Gedeputeerde Staten is niet tevens lid van Provinciale Staten",
+    variants: [`Gedeputeerde Staten vormen de hoogste macht in de provincie`, `De gedeputeerden worden uit hun midden gekozen door Provinciale Staten`, `Een lid van Gedeputeerde Staten is niet tevens lid van Provinciale Staten`]
+  }, {
+    id: 259,
+    question: "Een opsporingsambtenaar ziet een verdachte een strafbaar feit plegen. Hij houdt die verdachte op heterdaad aan. Welke plicht heeft hij nu?",
+    answer: "De verdachte ten spoedigste voorgeleiden voor een hulpofficier van justitie",
+    variants: [`De verdachte de cautie verlenen`, `De verdachte overbrengen voor verhoor`, `De verdachte ten spoedigste voorgeleiden voor een hulpofficier van justitie`]
+  }, {
+    id: 260,
+    question: "Welke feiten zijn de feiten waarvoor voorlopige hechtenis mogelijk is (VH feiten)?",
+    answer: "Alle misdrijven waarop 4 jaar of meer gevangenisstraf staat",
+    variants: [`Alle misdrijven uit het Wetboek van Strafrecht`, `Alle misdrijven waarop 4 jaar of meer gevangenisstraf staat`, `Alle misdrijven waarop gevangenisstraf staat`]
+  }, {
+    id: 261,
+    question: "Het proces-verbaal van verhoor van de verdachte, met name de bekentenis, moet zoveel als mogelijk in:",
+    answer: "Zijn eigen woorden worden weergegeven en zoveel mogelijk in vraag en antwoord vorm",
+    variants: [`De taal van de verdachte worden weergegeven`, `Voor hem begrijpelijke taal worden weergegeven`, `Zijn eigen woorden worden weergegeven en zoveel mogelijk in vraag en antwoord vorm`]
+  }, {
+    id: 262,
+    question: "Wat is juist?",
+    answer: "De medepleger kan als dader worden gestraft",
+    variants: [`De medeplichtige is onder voorwaarden strafbaar als dader`, `De medepleger kan als dader worden gestraft`, `De doen pleger pleegt het feit samen met de medepleger`]
+  }, {
+    id: 262,
+    question: "Wie kiest de leden van de Tweede kamer?",
+    answer: "Alle Nederlanders van 18 jaar en ouder",
+    variants: [`De leden van Provinciale Staten`, `Alle ingezetenen van Nederland.`, `Alle Nederlanders van 18 jaar en ouder`]
+  }, {
+    id: 263,
+    question: "De wetgevende macht berust bij",
+    answer: "De regering en Staten-Generaal",
+    variants: [`De regering en de koning`, `De Eerste Kamer en de Tweede Kamer`, `De regering en Staten-Generaal`]
   }//{
   //   id: 10,
   //   question: "",
