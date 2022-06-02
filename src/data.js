@@ -126,7 +126,7 @@ export const allData = [
     variants: [`Ik merkte de man aan als verdachte van vernieling`, `De motor had een cilinderinhoud van 80cc`, `De man liep hard weg`, `Ik zag dat de man in mijn richting keek`]
   }, {
     id: 20,
-    question: "Een verdachte wordt staande gehouden door een opsporingsambtenaar (OA) die hem zojuist een overtreding zag plegen. De OA deelt de verdachte mee van welk feit hij hem verdenkt en vraagt de verdachte vervolgens naar zijn identiteitsgegevens. De verdachte weigert zijn identiteitsgegevens op te geven aan de DA.<br>\
+    question: "Een verdachte wordt staande gehouden door een opsporingsambtenaar (OA) die hem zojuist een overtreding zag plegen. De OA deelt de verdachte mee van welk feit hij hem verdenkt en vraagt de verdachte vervolgens naar zijn identiteitsgegevens. De verdachte weigert zijn identiteitsgegevens op te geven aan de OA.<br>\
     Mag de verdachte dit weigeren?",
     answer: "Ja, de verdachte mag straffeloos weigeren zijn identiteitsgegevens op te geven",
     variants: [`Ja, de verdachte mag straffeloos weigeren zijn identiteitsgegevens op te geven`, `Ja, want de cautie was nog niet gegeven`, 
