@@ -956,7 +956,7 @@ export const allData = [
     id: 143,
     question: "Een politieagent betrapt op heterdaad een jongen die een ipad steelt. Als de agent de jongen wil aanhouden rent hij een nabijgelegen woning binnen. Omdat de deur niet goed achter hem in het slot valt, rent de agent hem achterna de woning in. In de hal krijgt hij de jongen te pakken en houdt hem aan.<br>\
     Mocht de agent de woning betreden om de jongen aan te houden?",
-    answer: "Ja, want in dit geval kan de machtiging achteraf worden verleend",
+    answer: "Nee, want hij had geen machtiging tot binnentreden van de woning",
     variants: [`Ja, want het is heterdaad en de deur was niet op slot`, `Ja, want in dit geval kan de machtiging achteraf worden verleend`, 
     `Nee, want hij had geen machtiging tot binnentreden van de woning`, `Nee, want de identiteit van de jongen is eenvoudig te achterhalen`]
   }, {
@@ -1318,13 +1318,6 @@ export const allData = [
     question: "Welke van de onderstaande stellingen is of zijn juist? <br>\
     I. Misdrijven worden in principe berecht door het gerechtshof.<br>\
     II. Overtredingen worden in principe berecht door de kantonrechter.",
-    answer: "Alleen II",
-    variants: [`Beide`, `Alleen I`, `Alleen II`, `Geen van beide`]
-  }, {
-    id: 207,
-    question: "Welke van de onderstaande stellingen is of zijn juist? <br>\
-    I. Misdrijven worden in principe berecht door het gerechtshof<br>\
-    II. Overtredingen worden in principe berecht door de kantonrechter",
     answer: "Alleen II",
     variants: [`Beide`, `Alleen I`, `Alleen II`, `Geen van beide`]
   }, {
