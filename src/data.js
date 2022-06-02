@@ -1535,7 +1535,7 @@ export const allData = [
   }, {
     id: 249,
     question: "Wat is een raadsheer op het gerechtshof?",
-    answer: "Een advocaat die de verdachte verdedigt en van advies voorziet",
+    answer: "Een rechter die rechtspreekt op dit gerecht",
     variants: [`De vertegenwoordiger van het Openbaar Ministerie op dit gerecht`, `Een advocaat die de verdachte verdedigt en van advies voorziet`, `Een rechter die rechtspreekt op dit gerecht`]
   }, {
     id: 250,
