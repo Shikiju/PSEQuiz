@@ -133,7 +133,7 @@ export const allData = [
     `Nee, verdachte is nu strafbaar voor het niet opgeven van zijn identiteitsgegevens`, `Nee, de verdachte is nu strafbaar voor het niet tonen van een identiteitsbewijs`]
   }, {
     id: 21,
-    question: "Tijdens een voetsurveillance ontdekt een agent een woninginbraak op heterdaad. De dader heeft de toegangsdeur van de woning geforceerd. De dader gaat op de vluchtzonder iets mee te nemen.<br>\
+    question: "Tijdens een voetsurveillance ontdekt een agent een woninginbraak op heterdaad. De dader heeft de toegangsdeur van de woning geforceerd. De dader gaat op de vlucht zonder iets mee te nemen.<br>\
     Welk strafbaar feit is hier gepleegd?",
     answer: "Poging tot overtreding van artikel 311 Sr (poging tot gekwalificeerde diefstal)",
     variants: [`Overtreding 311 SR (gekwalificeerde diefstal)`, `Poging tot overtreding van artikel 311 Sr (poging tot gekwalificeerde diefstal)`, 
