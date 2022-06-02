@@ -898,7 +898,7 @@ export const allData = [
     question: "Een politieman voert rechtmatig een veiligheidsfouillering uit. Bij deze fouillering doorzoekt de<br>\
     politieman de jaszakken van deze persoon.<br>\
     Mag de politieman de jaszakken doorzoeken ?",
-    answer: "Ja, als de veiligheid van de ambtenaar en de omgeving dit vraagt",
+    answer: "Nee, hij mag alleen de kleding oppervlakkig aftasten",
     variants: [`Nee, jassen vallen niet onder de kleding die oppervlakkig mag worden afgetast`, `Ja, mits iemand van hetzelfde geslacht de veiligheidsfouillering uitvoert`, 
     `Ja, als de veiligheid van de ambtenaar en de omgeving dit vraagt`, `Nee, hij mag alleen de kleding oppervlakkig aftasten`]
   }, {
